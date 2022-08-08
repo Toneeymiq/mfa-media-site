@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/mfa-media-site/static/css/main.3671f5dc.css",
-    "main.js": "/mfa-media-site/static/js/main.1462d5ee.js",
+    "main.js": "/mfa-media-site/static/js/main.4011c8b5.js",
     "static/media/media-site-logo.png": "/mfa-media-site/static/media/media-site-logo.62aa31bb2a144714f906.png",
     "index.html": "/mfa-media-site/index.html",
     "main.3671f5dc.css.map": "/mfa-media-site/static/css/main.3671f5dc.css.map",
-    "main.1462d5ee.js.map": "/mfa-media-site/static/js/main.1462d5ee.js.map"
+    "main.4011c8b5.js.map": "/mfa-media-site/static/js/main.4011c8b5.js.map"
   },
   "entrypoints": [
     "static/css/main.3671f5dc.css",
-    "static/js/main.1462d5ee.js"
+    "static/js/main.4011c8b5.js"
   ]
 }
