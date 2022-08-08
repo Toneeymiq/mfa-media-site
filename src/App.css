@@ -1,0 +1,15 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: var(--color--bg);
+}
+
+body a{
+    text-decoration: none;
+    color: unset;
+}
+
+:root {
+    --color--navbar: #000000;
+    --color--bg: #0d0d0e;
+}

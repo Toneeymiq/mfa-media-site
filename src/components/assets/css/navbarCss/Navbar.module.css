@@ -1,0 +1,276 @@
+Animations
+.fade_in {
+  -webkit-animation: fade_in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade_in 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes fade_in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade_in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.nav_container {
+  background: var(--color--navbar);
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+}
+
+.nav_container a {
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  margin: 0 2rem;
+}
+
+.nav_bar_links {
+  display: flex;
+  padding: 0;
+}
+
+.nav_bar_links p,
+.about_links p {
+  font-style: italic;
+  font-weight: bold;
+  font-family: monospace;
+  font-size: 18px;
+}
+
+.nav_bar_links p {
+  padding: 0 1rem;
+  margin: 0 2%;
+  color: #6d8b99;
+}
+
+.nav_bar_links p:hover,
+.menu_about_links p:hover {
+  color: #4a626c;
+}
+
+.nav_bar_about {
+  margin-right: 2rem;
+}
+
+.about_links {
+  display: flex;
+  padding: 1px;
+  align-items: center;
+}
+
+.about_links p {
+  margin: 0 1rem;
+  padding: 0.5rem 1.5rem;
+  color: rgb(0, 0, 0);
+  border-radius: 3px;
+}
+
+.about_menu_links p:hover {
+  transform: scale(105%);
+  color: rgb(0, 52, 0);
+  background: #a8aec7;
+}
+
+.about p {
+  background: #bcc3f1;
+}
+
+.services p {
+  background: #8c9afb;
+}
+
+.logo {
+  width: 150px;
+  margin: 0 2rem;
+}
+
+.logo img {
+  width: 9rem;
+}
+
+.navbar_menu_container {
+  display: none;
+  position: absolute;
+  background: #0c0e1c;
+  -webkit-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 1);
+  box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 1);
+}
+
+.nav_bar_menu {
+  display: none;
+  z-index: 10;
+}
+
+.about_menu_links {
+  display: flex;
+}
+
+.menu_about_links {
+  display: none;
+}
+
+.close_menu {
+  display: none;
+}
+
+.nav_bar_hover_container {
+  position: absolute;
+  width: 22rem;
+  background: rgb(0, 0, 0);
+  margin: 0.5rem;
+  border: 0.1px solid rgb(33, 33, 33);
+  border-radius: 4px;
+  -webkit-box-shadow: -2px 2px 14px 0px rgba(0,0,0,1);
+  -moz-box-shadow: -2px 2px 14px 0px rgba(0,0,0,1);
+  box-shadow: -2px 2px 14px 0px rgba(0,0,0,1);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.hover_content p{
+  color: rgb(63, 132, 152);
+}
+
+
+.hover_content {
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.nav_bar_links p:hover ~ .nav_bar_hover_container {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media screen and (max-width: 955px) {
+  .nav_bar_menu {
+    display: unset;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .navbar_menu_container {
+    display: flex;
+    position: absolute;
+    top: 5rem;
+    right: 4.5rem;
+    border-radius: 5px;
+  }
+
+  .nav_bar_links {
+    display: block;
+    margin: 5rem 3rem;
+    text-align: center;
+  }
+
+  .nav_bar_links p {
+    color: white;
+    margin-bottom: 3rem;
+  }
+
+  .about_links p{
+    font-size: 16px;
+  }
+
+  .nav_bar_menubtn {
+    width: 25px;
+  }
+
+  .nav_bar_links p:hover ~ .nav_bar_hover_container {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .logo {
+    margin: 0 1rem;
+  }
+
+  .nav_bar_about {
+    margin-right: 1rem;
+  }
+
+  .about_links p {
+    margin: 0 0.5rem;
+    padding: 0.4rem 1.1rem;
+  }
+
+  .navbar_menu_container p {
+    margin: 3rem 0.5rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .about_menu_links {
+    display: none;
+  }
+
+  .menu_about_links {
+    display: block;
+    text-align: center;
+  }
+
+  .menu_about_links p {
+    color: #fff;
+    background: transparent;
+    margin: 2rem;
+  }
+
+  .nav_bar_links {
+    margin: 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .close_menu {
+    display: unset;
+  }
+  .navbar_menu_container {
+    width: 100%;
+    height: 100vh;
+    right: 0;
+    top: 0;
+    justify-content: center;
+  }
+
+  .navbar_menu_container p {
+    margin: 10% 0.5rem;
+  }
+
+  .logo img {
+    width: 7rem;
+  }
+
+  .nav_bar_menubtn{
+    width: 20px;
+  }
+
+  .nav_container {
+    height: 50px;
+  }
+
+  .nav_bar_links {
+    margin-top: 50%;
+  }
+}
