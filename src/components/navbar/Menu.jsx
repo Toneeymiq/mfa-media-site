@@ -10,7 +10,7 @@ const Menu = () => {
           <p>HOME</p>
         </Link>
         <Link to="/film">
-          <p>Videography</p>
+          <p>VIDEOGRAPHY</p>
           <HoverMenu
             description="Here you will find films that have 
                          been produced in Mpesa Foundation Academy by the Media students"
