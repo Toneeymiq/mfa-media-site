@@ -1,14 +1,45 @@
 {
   "files": {
-    "main.css": "/mfa-media-site/static/css/main.3671f5dc.css",
-    "main.js": "/mfa-media-site/static/js/main.4011c8b5.js",
-    "static/media/media-site-logo.png": "/mfa-media-site/static/media/media-site-logo.62aa31bb2a144714f906.png",
+    "main.css": "/mfa-media-site/static/css/main.dd01525c.css",
+    "main.js": "/mfa-media-site/static/js/main.a3321b25.js",
+    "static/media/working-in-dollars.png": "/mfa-media-site/static/media/working-in-dollars.682cd8b80937388f293c.png",
+    "static/media/homies.png": "/mfa-media-site/static/media/homies.1054b9529d7e5f0e25f0.png",
+    "static/media/part-and-go.png": "/mfa-media-site/static/media/part-and-go.4637e5c0ce375220b66c.png",
+    "static/media/liftmeup.png": "/mfa-media-site/static/media/liftmeup.d8a0993afc761f3c07af.png",
+    "static/media/shikisha.png": "/mfa-media-site/static/media/shikisha.9e45371282c9baa16b3c.png",
+    "static/media/life-part1.png": "/mfa-media-site/static/media/life-part1.75c2404328f43db86502.png",
+    "static/media/glock.jpg": "/mfa-media-site/static/media/glock.07343c71825ee631b24c.jpg",
+    "static/media/media-site-logo.png": "/mfa-media-site/static/media/media-site-logo.76d794cba363efbb41ae.png",
+    "static/media/teeny.jpg": "/mfa-media-site/static/media/teeny.3fedb70144acae6744c9.jpg",
+    "static/media/beautiful.jpg": "/mfa-media-site/static/media/beautiful.fc664e3e6b427cabf680.jpg",
+    "static/media/sandcastles.jpg": "/mfa-media-site/static/media/sandcastles.ae017cf098664b34cd90.jpg",
+    "static/media/junk.jpg": "/mfa-media-site/static/media/junk.a2abea73ff0e12df2653.jpg",
+    "static/media/happy-birthday.jpg": "/mfa-media-site/static/media/happy-birthday.0eb1a010b4052947057d.jpg",
+    "static/media/come-back.jpg": "/mfa-media-site/static/media/come-back.a32a255bb325fd985c13.jpg",
+    "static/media/revolution.jpg": "/mfa-media-site/static/media/revolution.88ebdc86b5a574f23e4b.jpg",
+    "static/media/im-for-you.jpg": "/mfa-media-site/static/media/im-for-you.d11856b3e28545db3317.jpg",
+    "static/media/rambo.jpg": "/mfa-media-site/static/media/rambo.31df63ddabedec5483b4.jpg",
+    "static/media/gratitude-remade.jpg": "/mfa-media-site/static/media/gratitude-remade.f1be82a6d8e138f61085.jpg",
+    "static/media/mental-health.jpg": "/mfa-media-site/static/media/mental-health.6deb062a380e3b7dc352.jpg",
+    "static/media/einstein.jpg": "/mfa-media-site/static/media/einstein.1498d822fd9d4180f19a.jpg",
+    "static/media/just-smile.jpg": "/mfa-media-site/static/media/just-smile.17795b666342210efe92.jpg",
+    "static/media/room-model.jpg": "/mfa-media-site/static/media/room-model.d3473705389dd57bc540.jpg",
+    "static/media/character-model.jpg": "/mfa-media-site/static/media/character-model.48cb486eb7130ddc209c.jpg",
+    "static/media/fix-you.jpg": "/mfa-media-site/static/media/fix-you.a32b6b869579b808aef0.jpg",
+    "static/media/genge-vibe.jpg": "/mfa-media-site/static/media/genge-vibe.2b6b0f5f150e6d7026b2.jpg",
+    "static/media/khaleo.jpg": "/mfa-media-site/static/media/khaleo.ca291cbcf59e90b9910d.jpg",
+    "static/media/love-is-the-answer.jpg": "/mfa-media-site/static/media/love-is-the-answer.67e4997e7453adea8a5c.jpg",
+    "static/media/snow-house.jpg": "/mfa-media-site/static/media/snow-house.8b9e0646165bf3a13ec1.jpg",
+    "static/media/out-of-time.jpg": "/mfa-media-site/static/media/out-of-time.8a2d28ae1f45c1d99877.jpg",
+    "static/media/car-animation.jpg": "/mfa-media-site/static/media/car-animation.9caeb09e51edfe7e3f5f.jpg",
+    "static/media/lift-me-up-lyric.jpg": "/mfa-media-site/static/media/lift-me-up-lyric.4a181c0a7a628afc3fa5.jpg",
+    "static/media/wish-i-could-erase.jpg": "/mfa-media-site/static/media/wish-i-could-erase.63564e19a276bc77398c.jpg",
     "index.html": "/mfa-media-site/index.html",
-    "main.3671f5dc.css.map": "/mfa-media-site/static/css/main.3671f5dc.css.map",
-    "main.4011c8b5.js.map": "/mfa-media-site/static/js/main.4011c8b5.js.map"
+    "main.dd01525c.css.map": "/mfa-media-site/static/css/main.dd01525c.css.map",
+    "main.a3321b25.js.map": "/mfa-media-site/static/js/main.a3321b25.js.map"
   },
   "entrypoints": [
-    "static/css/main.3671f5dc.css",
-    "static/js/main.4011c8b5.js"
+    "static/css/main.dd01525c.css",
+    "static/js/main.a3321b25.js"
   ]
 }
