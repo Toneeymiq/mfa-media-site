@@ -5,7 +5,7 @@ function Services() {
     <div className={AboutCss.about_container}>
       <div className={AboutCss.about_content}>
         <h1>MFA Media</h1>
-        <p>The Blog will be updated very soon</p>
+        <p>The Blog will be updated soon</p>
       </div>
     </div>
   );
