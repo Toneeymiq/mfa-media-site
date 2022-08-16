@@ -10,4 +10,4 @@ function HoverMenu(props) {
   )
 }
 
-export default HoverMenu
+export default HoverMenu;

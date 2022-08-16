@@ -1,44 +1,51 @@
-import Iframe from "../../content/Iframe";
-
 const DesignLinks = [
   {
-    link: <Iframe linking="https://www.youtube.com/embed/ot_c75rjNdo" />,
-    title: (
-      <a href="https://youtu.be/ot_c75rjNdo" target="_blank" rel="noreferrer">
-        Blender car Animation
-      </a>
-    ),
-    Description: "By Antony Mwangi",
+    title: "Gimnple Low key",
+    Description: "By Stephen Omondi",
+    image:
+      "https://images.unsplash.com/photo-1658479558478-3456313f0096?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
   },
-
   {
-    link: <Iframe linking="https://www.youtube.com/embed/fgklFv98s2E" />,
-    title: (
-      <a href="https://youtu.be/fgklFv98s2E" target="_blank" rel="noreferrer">
-        Albert Einstein Drawing
-      </a>
-    ),
-    Description: "By Antony Mwangi",
+    title: "Gimnple Low key",
+    Description: "By Stephen Omondi",
+    image:
+      "https://images.unsplash.com/photo-1658479558478-3456313f0096?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
   },
-
   {
-    link: <Iframe linking="https://www.youtube.com/embed/F1kCvmeuHSc" />,
-    title: (
-      <a href="https://youtu.be/F1kCvmeuHSc" target="_blank" rel="noreferrer">
-        Blender Room Animation
-      </a>
-    ),
-    Description: "By Antony Mwangi",
+    title: "Gimnple Low key",
+    Description: "By Stephen Omondi",
+    image:
+      "https://images.unsplash.com/photo-1658479558478-3456313f0096?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
   },
-
   {
-    link: <Iframe linking="https://www.youtube.com/embed/a9K82sf_0DI" />,
-    title: (
-      <a href="https://youtu.be/a9K82sf_0DI" target="_blank" rel="noreferrer">
-        Blender Character Animation
-      </a>
-    ),
-    Description: "By Antony Mwangi",
+    title: "Gimnple Low key",
+    Description: "By Stephen Omondi",
+    image:
+      "https://images.unsplash.com/photo-1658479558478-3456313f0096?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+  },
+  {
+    title: "Gimnple Low key",
+    Description: "By Stephen Omondi",
+    image:
+      "https://images.unsplash.com/photo-1658479558478-3456313f0096?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+  },
+  {
+    title: "Gimnple Low key",
+    Description: "By Stephen Omondi",
+    image:
+      "https://images.unsplash.com/photo-1658479558478-3456313f0096?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+  },
+  {
+    title: "Gimnple Low key",
+    Description: "By Stephen Omondi",
+    image:
+      "https://images.unsplash.com/photo-1658479558478-3456313f0096?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+  },
+  {
+    title: "Gimnple Low key",
+    Description: "By Stephen Omondi",
+    image:
+      "https://images.unsplash.com/photo-1658479558478-3456313f0096?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
   },
 ];
 

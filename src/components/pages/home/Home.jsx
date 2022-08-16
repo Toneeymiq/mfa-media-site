@@ -1,12 +1,12 @@
-import Content from "../../content/Content";
 import Design from "../design/Design";
 import FilmContent from "../film/Film";
 import Photography from "../photography/Photography";
+import Homeimg from "./Homeimg";
 
 function Home() {
   return (
     <>
-      <Content />
+      <Homeimg />
       <FilmContent />
       <Design />
       <Photography />

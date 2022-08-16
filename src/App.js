@@ -8,11 +8,13 @@ import About from "./components/pages/aboutUs/About";
 import Services from "./components/pages/services/Services";
 import Error from "./components/pages/404error/Error";
 import "./App.css";
+import "./index.css";
 
 function App() {
+
   return (
     <>
-    <NavBar />
+      <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/film" element={<Film />} />
