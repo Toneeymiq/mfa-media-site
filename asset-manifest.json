@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mfa-media-site/static/css/main.dd01525c.css",
-    "main.js": "/mfa-media-site/static/js/main.a3321b25.js",
+    "main.js": "/mfa-media-site/static/js/main.3f15843e.js",
     "static/media/working-in-dollars.png": "/mfa-media-site/static/media/working-in-dollars.682cd8b80937388f293c.png",
     "static/media/homies.png": "/mfa-media-site/static/media/homies.1054b9529d7e5f0e25f0.png",
     "static/media/part-and-go.png": "/mfa-media-site/static/media/part-and-go.4637e5c0ce375220b66c.png",
@@ -36,10 +36,10 @@
     "static/media/wish-i-could-erase.jpg": "/mfa-media-site/static/media/wish-i-could-erase.63564e19a276bc77398c.jpg",
     "index.html": "/mfa-media-site/index.html",
     "main.dd01525c.css.map": "/mfa-media-site/static/css/main.dd01525c.css.map",
-    "main.a3321b25.js.map": "/mfa-media-site/static/js/main.a3321b25.js.map"
+    "main.3f15843e.js.map": "/mfa-media-site/static/js/main.3f15843e.js.map"
   },
   "entrypoints": [
     "static/css/main.dd01525c.css",
-    "static/js/main.a3321b25.js"
+    "static/js/main.3f15843e.js"
   ]
 }
