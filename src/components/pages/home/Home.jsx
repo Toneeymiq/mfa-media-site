@@ -8,7 +8,7 @@ function Home() {
     <>
       <Homeimg />
       <FilmContent />
-      <Design />
+      {/* <Design /> */}
       <Photography />
     </>
   );
