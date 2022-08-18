@@ -1,16 +1,13 @@
 import HomeCss from "../../assets/css/homeCss/home.module.css";
 import ContentBox from "../../content/Content-box";
-import PhotographyLinks from "./PhotographyLinks";
-import PhotographyCss from "../../assets/css/photographyCss/photographyCss.module.css";
+import PhotosLinks from "./PhotoLinks";
+import PhotosCss from "../../assets/css/photographyCss/photographyCss.module.css";
 
-function Photography() {
+function Photos() {
   return (
-    <div className={PhotographyCss.photography_container}>
-      <div className={HomeCss.film_title}>
-        <h1>Photography</h1>
-      </div>
+    <div className={PhotosCss.photography_container}>
       <div className={HomeCss.content}>
-        {PhotographyLinks.map((value) => {
+        {PhotosLinks.map((value) => {
           return (
             <ContentBox
               title={
@@ -34,4 +31,4 @@ function Photography() {
   );
 }
 
-export default Photography;
+export default Photos;

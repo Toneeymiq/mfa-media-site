@@ -1,7 +1,7 @@
 import HomeCss from "../assets/css/homeCss/home.module.css";
 import { useState } from "react";
 import { RiCloseLine } from "react-icons/ri";
-import VideoModal from "../pages/film/VideoModal";
+import VideoModal from "../pages/video/VideoModal";
 import AnimationCss from '../assets/css/overallCss/animations.module.css'
 
 function ContentBox(props) {

@@ -27,15 +27,15 @@ import SandCastles from "../../assets/images/serendipity/sandcastles.jpg";
 import LightFlex from "../../assets/images/serendipity/light-flex.jpg";
 import WishICouldErase from "../../assets/images/serendipity/wish-i-could-erase.jpg";
 import Khaleo from "../../assets/images/maxwell/khaleo.jpg";
-import SnowHouseModel from '../../assets/images/miqkniq/snow-house.jpg'
-import RoomModel from '../../assets/images/miqkniq/room-model.jpg'
-import CharacterModel from '../../assets/images/miqkniq/character-model.jpg'
-import Einstein from '../../assets/images/miqkniq/einstein.jpg'
-import CarModel from '../../assets/images/miqkniq/car-animation.jpg'
+import SnowHouseModel from "../../assets/images/miqkniq/snow-house.jpg";
+import RoomModel from "../../assets/images/miqkniq/room-model.jpg";
+import CharacterModel from "../../assets/images/miqkniq/character-model.jpg";
+import Einstein from "../../assets/images/miqkniq/einstein.jpg";
+import CarModel from "../../assets/images/miqkniq/car-animation.jpg";
 // import LiftMeUp from '../../assets/images/jelly_dollar/liftmeup.jpg'
 // import LiftMeUp from '../../assets/images/jelly_dollar/liftmeup.jpg'
 
-const FilmLinks = [
+const VideoLinks = [
   {
     link: (
       <iframe
@@ -50,7 +50,8 @@ const FilmLinks = [
     ),
     title: "Weigh down we go cover",
     Description: "Song by Maxwell Peter",
-    image: <img src={Khaleo} alt="" />,
+    image: Khaleo,
+    category: "music",
   },
   {
     link: (
@@ -66,7 +67,8 @@ const FilmLinks = [
     ),
     title: "Lift me Up",
     Description: "Song by Jelly Dollar ft Zennah",
-    image: <img src={LiftMeUp} alt="" />,
+    image: LiftMeUp,
+    category: "music",
   },
 
   {
@@ -83,7 +85,8 @@ const FilmLinks = [
     ),
     title: "Light Flex",
     Description: "Song by Serendipity",
-    image: <img src={LightFlex} alt="" />,
+    image: LightFlex,
+    category: "music",
   },
 
   {
@@ -100,7 +103,8 @@ const FilmLinks = [
     ),
     title: "Part and GO",
     Description: "Song by Jelly Dollar",
-    image: <img src={PartAndGo} alt="" />,
+    image: PartAndGo,
+    category: "music",
   },
   {
     link: (
@@ -116,7 +120,8 @@ const FilmLinks = [
     ),
     title: "Out of time",
     Description: "Short film By Maxwell Peter",
-    image: <img src={OutOfTime} alt="" />,
+    image: OutOfTime,
+    category: "film",
   },
   {
     link: (
@@ -132,7 +137,8 @@ const FilmLinks = [
     ),
     title: "Shikisha",
     Description: "Song by Jelly Dollar",
-    image: <img src={Shikisha} alt="" />,
+    image: Shikisha,
+    category: "music",
   },
 
   {
@@ -149,7 +155,8 @@ const FilmLinks = [
     ),
     title: "Beautiful",
     Description: "Song by Zennah",
-    image: <img src={Beautiful} alt="" />,
+    image: Beautiful,
+    category: "music",
   },
   {
     link: (
@@ -165,7 +172,8 @@ const FilmLinks = [
     ),
     title: "Life",
     Description: "Song by Jelly Dollar",
-    image: <img src={LifePart1} alt="" />,
+    image: LifePart1,
+    category: "music",
   },
 
   {
@@ -182,7 +190,8 @@ const FilmLinks = [
     ),
     title: "Wish I Could Erase",
     Description: "Song by Serendipity",
-    image: <img src={WishICouldErase} alt="" />,
+    image: WishICouldErase,
+    category: "music",
   },
 
   {
@@ -199,7 +208,8 @@ const FilmLinks = [
     ),
     title: "Blender Car Animation",
     Description: "Blender Model by Miqkniq",
-    image: <img src={CarModel} alt="" />,
+    image: CarModel,
+    category: "arts",
   },
 
   {
@@ -216,7 +226,8 @@ const FilmLinks = [
     ),
     title: "Come back",
     Description: "Song by Zennah",
-    image: <img src={ComeBack} alt="" />,
+    image: ComeBack,
+    category: "music",
   },
   {
     link: (
@@ -232,7 +243,8 @@ const FilmLinks = [
     ),
     title: "Just Smile",
     Description: "Song by Jelly Dollar",
-    image: <img src={JustSmile} alt="" />,
+    image: JustSmile,
+    category: "music",
   },
 
   {
@@ -247,9 +259,10 @@ const FilmLinks = [
         allowfullscreen="allowfullscreen"
       ></iframe>
     ),
-    title: "Blender Snow House Design",
+    title: "Blender Snow House Model",
     Description: "Blender Model by Miqkniq",
-    image: <img src={SnowHouseModel} alt="" />,
+    image: SnowHouseModel,
+    category: "arts",
   },
   {
     link: (
@@ -265,7 +278,8 @@ const FilmLinks = [
     ),
     title: "Junk",
     Description: "Song by Jelly Dollar",
-    image: <img src={Junk} alt="" />,
+    image: Junk,
+    category: "music",
   },
 
   {
@@ -282,7 +296,8 @@ const FilmLinks = [
     ),
     title: "Rambo",
     Description: "Song By Jelly Dollar",
-    image: <img src={Rambo} alt="" />,
+    image: Rambo,
+    category: "music",
   },
 
   {
@@ -299,7 +314,8 @@ const FilmLinks = [
     ),
     title: "Out of time Trailor",
     Description: "Short film by Maxwell Peter",
-    image: <img src={OutOfTime} alt="" />,
+    image: OutOfTime,
+    category: "film",
   },
 
   {
@@ -316,7 +332,8 @@ const FilmLinks = [
     ),
     title: "Blender bed room Model",
     Description: "Blender Model by Miqkniq",
-    image: <img src={RoomModel} alt="" />,
+    image: RoomModel,
+    category: "arts",
   },
   {
     link: (
@@ -332,7 +349,8 @@ const FilmLinks = [
     ),
     title: "I'm for you",
     Description: "Song by Jelly Dollar",
-    image: <img src={ImForYou} alt="" />,
+    image: ImForYou,
+    category: "music",
   },
   {
     link: (
@@ -348,7 +366,8 @@ const FilmLinks = [
     ),
     title: "Mental Health",
     Description: "Song by Jelly Dollar",
-    image: <img src={MentalHealth} alt="" />,
+    image: MentalHealth,
+    category: "music",
   },
 
   {
@@ -365,7 +384,8 @@ const FilmLinks = [
     ),
     title: "Love is the answer",
     Description: "Song by Zennah",
-    image: <img src={LoveIsTheAnswer} alt="" />,
+    image: LoveIsTheAnswer,
+    category: "music",
   },
 
   {
@@ -382,7 +402,8 @@ const FilmLinks = [
     ),
     title: "Lift me up lyric video",
     Description: "Song by Jelly Dollar ft Zennah",
-    image: <img src={LiftMeUpLyric} alt="" />,
+    image: LiftMeUpLyric,
+    category: "music",
   },
   {
     link: (
@@ -398,7 +419,8 @@ const FilmLinks = [
     ),
     title: "Teeny",
     Description: "Song by Jelly Dollar x Kid da beev x dastroligod",
-    image: <img src={Teeny} alt="" />,
+    image: Teeny,
+    category: "music",
   },
 
   {
@@ -415,7 +437,8 @@ const FilmLinks = [
     ),
     title: "Sandcastles",
     Description: "Song by Serendipity",
-    image: <img src={SandCastles} alt="" />,
+    image: SandCastles,
+    category: "music",
   },
 
   {
@@ -432,7 +455,8 @@ const FilmLinks = [
     ),
     title: "Albert Einstein pencil drawing",
     Description: "By Miqkniq",
-    image: <img src={Einstein} alt="" />,
+    image: Einstein,
+    category: "arts",
   },
 
   {
@@ -449,7 +473,8 @@ const FilmLinks = [
     ),
     title: "Fix you cover",
     Description: "Song by Zennah",
-    image: <img src={FixYou} alt="" />,
+    image: FixYou,
+    category: "music",
   },
   {
     link: (
@@ -465,7 +490,8 @@ const FilmLinks = [
     ),
     title: "Glock",
     Description: "Song by Jelly Dollar x Jdrek x kid da beev x Dastroligod",
-    image: <img src={Glock} alt="" />,
+    image: Glock,
+    category: "music",
   },
   {
     link: (
@@ -481,7 +507,8 @@ const FilmLinks = [
     ),
     title: "Remaking Gratitude",
     Description: "Song by Jelly Dollar",
-    image: <img src={GratitudeRemade} alt="" />,
+    image: GratitudeRemade,
+    category: "music",
   },
 
   {
@@ -498,7 +525,8 @@ const FilmLinks = [
     ),
     title: "Blender character Model",
     Description: "Blender Model by Miqkniq",
-    image: <img src={CharacterModel} alt="" />,
+    image: CharacterModel,
+    category: "arts",
   },
 
   {
@@ -515,7 +543,8 @@ const FilmLinks = [
     ),
     title: "Gengevibe",
     Description: "Song by Jelly Dollar",
-    image: <img src={GengeVibes} alt="" />,
+    image: GengeVibes,
+    category: "music",
   },
   {
     link: (
@@ -531,7 +560,8 @@ const FilmLinks = [
     ),
     title: "Homies Journey",
     Description: "Song by Jelly Dollar",
-    image: <img src={Homies} alt="" />,
+    image: Homies,
+    category: "music",
   },
   {
     link: (
@@ -547,7 +577,8 @@ const FilmLinks = [
     ),
     title: "Happy Birthday",
     Description: "Song by Jelly Dollar",
-    image: <img src={HappyBirthday} alt="" />,
+    image: HappyBirthday,
+    category: "music",
   },
   {
     link: (
@@ -563,7 +594,8 @@ const FilmLinks = [
     ),
     title: "@Revolution Part 2",
     Description: "Song by Jelly Dollar",
-    image: <img src={Revolution} alt="" />,
+    image: Revolution,
+    category: "music",
   },
   {
     link: (
@@ -579,7 +611,8 @@ const FilmLinks = [
     ),
     title: "Gratitude @mpesa foundation academy",
     Description: "Song by Jelly Dollar",
-    image: <img src={Gratitude} alt="" />,
+    image: Gratitude,
+    category: "music",
   },
   {
     link: (
@@ -595,8 +628,9 @@ const FilmLinks = [
     ),
     title: "Talking in Dollars",
     Description: "Song by Jelly Dollar",
-    image: <img src={WorkingInDollars} alt="" />,
+    image: WorkingInDollars,
+    category: "music",
   },
 ];
 
-export default FilmLinks;
+export default VideoLinks;

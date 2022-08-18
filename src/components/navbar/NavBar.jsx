@@ -1,16 +1,17 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/images/media-site-logo.png";
 import NavbarCss from "../assets/css//navbarCss/Navbar.module.css";
-import { RiMenuLine, RiCloseLine } from "react-icons/ri";
+import { RiMenuLine, RiCloseLine, RiSearch2Line } from "react-icons/ri";
 
 import { useState } from "react";
 import Modal from "./Modal";
 import Menu from "./Menu";
 import "../../index.css";
 import Theme from "./Theme";
-import AnimationCss from '../assets/css/overallCss/animations.module.css'
+import AnimationCss from "../assets/css/overallCss/animations.module.css";
 
 import useLocalStorage from "use-local-storage";
+import Search from "./Search";
 
 function NavBar() {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -35,13 +36,12 @@ function NavBar() {
         <nav className={NavbarCss.navbar}>
           <Menu />
         </nav>
+        <Search />
         <Theme onClick={switchTheme} text={theme} />
         <div className={NavbarCss.nav_bar_about}>
           <ul className={NavbarCss.about_links}>
             <div className={NavbarCss.about_menu_links}>
-              <Link className={NavbarCss.about} to="/about">
-                <p>ABOUT</p>
-              </Link>
+         
               <Link className={NavbarCss.services} to="/services">
                 <p>BLOG</p>
               </Link>
@@ -73,9 +73,6 @@ function NavBar() {
                     <div className={AnimationCss.tracking_in_expand}>
                       <Menu onClick={() => setToggleMenu(false)} />
                       <div className={NavbarCss.menu_about_links}>
-                        <Link className={NavbarCss.about} to="/about">
-                          <p onClick={() => setToggleMenu(false)}>ABOUT</p>
-                        </Link>
                         <Link className={NavbarCss.services} to="/services">
                           <p onClick={() => setToggleMenu(false)}>BLOG</p>
                         </Link>

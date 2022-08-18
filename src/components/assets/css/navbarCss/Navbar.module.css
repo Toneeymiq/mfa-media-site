@@ -29,7 +29,11 @@ Animations .fade_in {
   justify-content: space-between;
   align-items: center;
   top: 0;
-  z-index: 1;
+  z-index: 2;
+}
+
+.navbar {
+  display: flex;
 }
 
 .nav_bar_links {
@@ -105,6 +109,7 @@ Animations .fade_in {
   -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 1);
   box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 33%);
   border: 1px solid #5c5c5c;
+  overflow-x: hidden;
 }
 
 .nav_bar_menu {
@@ -129,9 +134,9 @@ Animations .fade_in {
   width: 22rem;
   background: var(--background);
   margin: 0.5rem;
-  border: 0.1px solid rgb(33, 33, 33);
+  border: 0.1px solid rgb(107 107 107 / 55%);
   border-radius: 4px;
-  -webkit-box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.535);
+  -webkit-box-shadow: -2px 2px 5px 0px rgba(81, 81, 81, 0.535);
   -moz-box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.571);
   box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.59);
   opacity: 0;
@@ -157,29 +162,13 @@ Animations .fade_in {
   z-index: -1;
 }
 
-.theme_container {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-}
 
 .theme_container p1 {
   padding: 0 8px 0 0;
   color: var(--text-color);
+ 
 }
 
-.theme_change {
-  background: rgb(255, 106, 106);
-  color: var(--background);
-  display: flex;
-  align-items: center;
-  width: 3.5rem;
-  padding: 1px 10px;
-  border-radius: 20px;
-  font-size: 15px;
-  border: none;
-  cursor: pointer;
-}
 
 @media screen and (max-width: 1040px) {
   .nav_bar_menu {
@@ -229,6 +218,10 @@ Animations .fade_in {
     opacity: 0;
     visibility: hidden;
   }
+}
+
+.content_title {
+  color: red;
 }
 
 @media screen and (max-width: 700px) {

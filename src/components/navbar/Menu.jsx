@@ -9,10 +9,10 @@ const Menu = (props) => {
         <Link to="/">
           <p onClick={props.onClick}>HOME</p>
         </Link>
-        <Link to="/film">
-          <p onClick={props.onClick}>VIDEOGRAPHY</p>
+        <Link to="/video">
+          <p onClick={props.onClick}>VIDEOS</p>
           <HoverMenu
-            description="Here you will find films that have 
+            description="Here you will find various videos like films and music that has
                          been produced in Mpesa Foundation Academy by the Media students"
           />
         </Link>
@@ -23,12 +23,15 @@ const Menu = (props) => {
                          the MFA students, including graphic designs, Blender Models, e.t.c"
           />
         </Link> */}
-        <Link to="/photography">
-          <p onClick={props.onClick}>PHOTOGRAPHY</p>
+        <Link to="/photos">
+          <p onClick={props.onClick}>PHOTOS</p>
           <HoverMenu
             description="Get to see outstanding talents in photography 
                          among the students of Mpesa Foundation Academy"
           />
+        </Link>
+        <Link className={NavbarCss.about} to="/about">
+          <p>ABOUT</p>
         </Link>
       </ul>
     </>

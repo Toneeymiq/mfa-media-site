@@ -12,7 +12,7 @@ function About() {
           <a href="https://new.mpesafoundationacademy.ac.ke" target="_blank" rel="noreferrer">
             Mpesa Foundation Academy
           </a>
-          This content includes Short Films shot in and outside of the school,
+          This content includes videos such as short films, music and entertainment videos shot in and outside of the school,
           Graphic design projects, professional images taken by the Media
           students to animation and many more. We hope you enjoy our content.
         </p>
