@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.css": "/mfa-media-site/static/css/main.dd01525c.css",
-    "main.js": "/mfa-media-site/static/js/main.74884ad3.js",
+    "main.css": "/mfa-media-site/static/css/main.60f8ef2d.css",
+    "main.js": "/mfa-media-site/static/js/main.d884007f.js",
+    "static/media/background.jpg": "/mfa-media-site/static/media/background.59745aee2ce50dc10610.jpg",
+    "static/media/nikon2.jpg": "/mfa-media-site/static/media/nikon2.f0b066de6fb34ce6de0b.jpg",
     "static/media/working-in-dollars.png": "/mfa-media-site/static/media/working-in-dollars.682cd8b80937388f293c.png",
     "static/media/homies.png": "/mfa-media-site/static/media/homies.1054b9529d7e5f0e25f0.png",
     "static/media/part-and-go.png": "/mfa-media-site/static/media/part-and-go.4637e5c0ce375220b66c.png",
     "static/media/liftmeup.png": "/mfa-media-site/static/media/liftmeup.d8a0993afc761f3c07af.png",
     "static/media/shikisha.png": "/mfa-media-site/static/media/shikisha.9e45371282c9baa16b3c.png",
     "static/media/life-part1.png": "/mfa-media-site/static/media/life-part1.75c2404328f43db86502.png",
+    "static/media/nikon.jpg": "/mfa-media-site/static/media/nikon.39b3e43f02bc77046566.jpg",
     "static/media/glock.jpg": "/mfa-media-site/static/media/glock.07343c71825ee631b24c.jpg",
     "static/media/media-site-logo.png": "/mfa-media-site/static/media/media-site-logo.76d794cba363efbb41ae.png",
     "static/media/teeny.jpg": "/mfa-media-site/static/media/teeny.3fedb70144acae6744c9.jpg",
@@ -24,6 +27,7 @@
     "static/media/einstein.jpg": "/mfa-media-site/static/media/einstein.1498d822fd9d4180f19a.jpg",
     "static/media/just-smile.jpg": "/mfa-media-site/static/media/just-smile.17795b666342210efe92.jpg",
     "static/media/room-model.jpg": "/mfa-media-site/static/media/room-model.d3473705389dd57bc540.jpg",
+    "static/media/out-of-time-trailor.jpg": "/mfa-media-site/static/media/out-of-time-trailor.7f0f6a8b15a97bca25e7.jpg",
     "static/media/character-model.jpg": "/mfa-media-site/static/media/character-model.48cb486eb7130ddc209c.jpg",
     "static/media/fix-you.jpg": "/mfa-media-site/static/media/fix-you.a32b6b869579b808aef0.jpg",
     "static/media/genge-vibe.jpg": "/mfa-media-site/static/media/genge-vibe.2b6b0f5f150e6d7026b2.jpg",
@@ -34,12 +38,16 @@
     "static/media/car-animation.jpg": "/mfa-media-site/static/media/car-animation.9caeb09e51edfe7e3f5f.jpg",
     "static/media/lift-me-up-lyric.jpg": "/mfa-media-site/static/media/lift-me-up-lyric.4a181c0a7a628afc3fa5.jpg",
     "static/media/wish-i-could-erase.jpg": "/mfa-media-site/static/media/wish-i-could-erase.63564e19a276bc77398c.jpg",
+    "static/media/slick.svg": "/mfa-media-site/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/mfa-media-site/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/mfa-media-site/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "index.html": "/mfa-media-site/index.html",
-    "main.dd01525c.css.map": "/mfa-media-site/static/css/main.dd01525c.css.map",
-    "main.74884ad3.js.map": "/mfa-media-site/static/js/main.74884ad3.js.map"
+    "static/media/slick.woff": "/mfa-media-site/static/media/slick.295183786cd8a1389865.woff",
+    "main.60f8ef2d.css.map": "/mfa-media-site/static/css/main.60f8ef2d.css.map",
+    "main.d884007f.js.map": "/mfa-media-site/static/js/main.d884007f.js.map"
   },
   "entrypoints": [
-    "static/css/main.dd01525c.css",
-    "static/js/main.74884ad3.js"
+    "static/css/main.60f8ef2d.css",
+    "static/js/main.d884007f.js"
   ]
 }
