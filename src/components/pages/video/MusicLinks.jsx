@@ -44,6 +44,7 @@ const MusicLinks = [
     Description: "Song by Maxwell Peter",
     image: Khaleo,
     category: "music",
+    path: "#/video/music",
   },
   {
     link: (
@@ -61,6 +62,7 @@ const MusicLinks = [
     Description: "Song by Jelly Dollar ft Zennah",
     image: LiftMeUp,
     category: "music",
+    path: "#/video/music",
   },
 
   {
@@ -79,6 +81,7 @@ const MusicLinks = [
     Description: "Song by Serendipity",
     image: LightFlex,
     category: "music",
+    path: "#/video/music",
   },
 
   {
@@ -97,6 +100,7 @@ const MusicLinks = [
     Description: "Song by Jelly Dollar",
     image: PartAndGo,
     category: "music",
+    path: "#/video/music",
   },
   {
     link: (
@@ -114,6 +118,7 @@ const MusicLinks = [
     Description: "Song by Jelly Dollar",
     image: Shikisha,
     category: "music",
+    path: "#/video/music",
   },
 
   {
@@ -132,6 +137,7 @@ const MusicLinks = [
     Description: "Song by Zennah",
     image: Beautiful,
     category: "music",
+    path: "#/video/music",
   },
   {
     link: (
@@ -149,6 +155,7 @@ const MusicLinks = [
     Description: "Song by Jelly Dollar",
     image: LifePart1,
     category: "music",
+    path: "#/video/music",
   },
 
   {
@@ -167,6 +174,7 @@ const MusicLinks = [
     Description: "Song by Serendipity",
     image: WishICouldErase,
     category: "music",
+    path: "#/video/music",
   },
   {
     link: (
@@ -184,6 +192,7 @@ const MusicLinks = [
     Description: "Song by Zennah",
     image: ComeBack,
     category: "music",
+    path: "#/video/music",
   },
   {
     link: (
@@ -201,6 +210,7 @@ const MusicLinks = [
     Description: "Song by Jelly Dollar",
     image: JustSmile,
     category: "music",
+    path: "#/video/music",
   },
   {
     link: (
@@ -218,6 +228,7 @@ const MusicLinks = [
     Description: "Song by Jelly Dollar",
     image: Junk,
     category: "music",
+    path: "#/video/music",
   },
 
   {
@@ -236,6 +247,7 @@ const MusicLinks = [
     Description: "Song By Jelly Dollar",
     image: Rambo,
     category: "music",
+    path: "#/video/music",
   },
   {
     link: (
@@ -253,6 +265,7 @@ const MusicLinks = [
     Description: "Song by Jelly Dollar",
     image: ImForYou,
     category: "music",
+    path: "#/video/music",
   },
   {
     link: (
@@ -270,6 +283,7 @@ const MusicLinks = [
     Description: "Song by Jelly Dollar",
     image: MentalHealth,
     category: "music",
+    path: "#/video/music",
   },
 
   {
@@ -288,6 +302,7 @@ const MusicLinks = [
     Description: "Song by Zennah",
     image: LoveIsTheAnswer,
     category: "music",
+    path: "#/video/music",
   },
 
   {
@@ -306,6 +321,7 @@ const MusicLinks = [
     Description: "Song by Jelly Dollar ft Zennah",
     image: LiftMeUpLyric,
     category: "music",
+    path: "#/video/music",
   },
   {
     link: (
@@ -323,6 +339,7 @@ const MusicLinks = [
     Description: "Song by Jelly Dollar x Kid da beev x dastroligod",
     image: Teeny,
     category: "music",
+    path: "#/video/music",
   },
 
   {
@@ -341,6 +358,7 @@ const MusicLinks = [
     Description: "Song by Serendipity",
     image: SandCastles,
     category: "music",
+    path: "#/video/music",
   },
   {
     link: (
@@ -358,6 +376,7 @@ const MusicLinks = [
     Description: "Song by Zennah",
     image: FixYou,
     category: "music",
+    path: "#/video/music",
   },
   {
     link: (
@@ -375,6 +394,7 @@ const MusicLinks = [
     Description: "Song by Jelly Dollar x Jdrek x kid da beev x Dastroligod",
     image: Glock,
     category: "music",
+    path: "#/video/music",
   },
   {
     link: (
@@ -392,6 +412,7 @@ const MusicLinks = [
     Description: "Song by Jelly Dollar",
     image: GratitudeRemade,
     category: "music",
+    path: "#/video/music",
   },
   {
     link: (
@@ -409,6 +430,7 @@ const MusicLinks = [
     Description: "Song by Jelly Dollar",
     image: GengeVibes,
     category: "music",
+    path: "#/video/music",
   },
   {
     link: (
@@ -426,6 +448,7 @@ const MusicLinks = [
     Description: "Song by Jelly Dollar",
     image: Homies,
     category: "music",
+    path: "#/video/music",
   },
   {
     link: (
@@ -443,6 +466,7 @@ const MusicLinks = [
     Description: "Song by Jelly Dollar",
     image: HappyBirthday,
     category: "music",
+    path: "#/video/music",
   },
   {
     link: (
@@ -460,6 +484,7 @@ const MusicLinks = [
     Description: "Song by Jelly Dollar",
     image: Revolution,
     category: "music",
+    path: "#/video/music",
   },
   {
     link: (
@@ -477,6 +502,7 @@ const MusicLinks = [
     Description: "Song by Jelly Dollar",
     image: Gratitude,
     category: "music",
+    path: "#/video/music",
   },
   {
     link: (
@@ -494,8 +520,8 @@ const MusicLinks = [
     Description: "Song by Jelly Dollar",
     image: WorkingInDollars,
     category: "music",
+    path: "#/video/music",
   },
-
 ];
 
 export default MusicLinks;

@@ -1,7 +1,3 @@
-.film_container{
-    margin-top: 70px;
-}
-
 .iframe_container {
     position: relative;
     width: 100%;
@@ -15,10 +11,4 @@
     left: 0;
     width: 100%;
     height: 100%;
-}
-
-@media screen and (max-width: 425px) {
-    .film_container {
-        margin-top: 50px;
-    }
 }

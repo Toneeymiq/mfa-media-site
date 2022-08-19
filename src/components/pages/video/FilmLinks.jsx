@@ -1,3 +1,4 @@
+
 import OutOfTime from "../../assets/images/maxwell/out-of-time.jpg";
 import OutOfTimeTrailor from "../../assets/images/maxwell/out-of-time-trailor.jpg";
 
@@ -18,6 +19,7 @@ const FilmLinks = [
     Description: "Short film by Maxwell Peter",
     image: OutOfTimeTrailor,
     category: "film",
+    path: "#/video/film"
   },
   {
     link: (
@@ -35,7 +37,7 @@ const FilmLinks = [
     Description: "Short film By Maxwell Peter",
     image: OutOfTime,
     category: "film",
-  },
-];
-
+    path: "#/video/film"
+    }
+]
 export default FilmLinks;

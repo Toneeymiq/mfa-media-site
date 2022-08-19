@@ -21,6 +21,7 @@ const ArtsLinks = [
         Description: "Blender Model by Miqkniq",
         image: CarModel,
         category: "arts",
+        path: "#/video/arts"
       },
 
       {
@@ -39,6 +40,7 @@ const ArtsLinks = [
         Description: "Blender Model by Miqkniq",
         image: SnowHouseModel,
         category: "arts",
+        path: "#/video/arts"
       },
       
   {
@@ -57,6 +59,7 @@ const ArtsLinks = [
     Description: "Blender Model by Miqkniq",
     image: RoomModel,
     category: "arts",
+    path: "#/video/arts"
   },
   
   {
@@ -75,6 +78,7 @@ const ArtsLinks = [
     Description: "By Miqkniq",
     image: Einstein,
     category: "arts",
+    path: "#/video/arts"
   },
   
   {
@@ -93,6 +97,7 @@ const ArtsLinks = [
     Description: "Blender Model by Miqkniq",
     image: CharacterModel,
     category: "arts",
+    path: "#/video/arts"
   },
 ]
 

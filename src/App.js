@@ -7,13 +7,12 @@ import Photos from "./components/pages/photos/Photos";
 import About from "./components/pages/aboutUs/About";
 import Services from "./components/pages/services/Services";
 import Error from "./components/pages/404error/Error";
-import Arts from "./components/content/categories/Arts";
 import "./App.css";
 import "./index.css";
-import Music from "./components/content/categories/Music";
-// import Film from "./components/content/categories/entertainment/Film";
 import Entertainment from "./components/content/categories/Entertainment";
-import Film from "./components/content/categories/entertainment/Film";
+import { MusicPage } from "./components/content/categories/Music";
+import{ FilmPage } from "./components/content/categories/Film";
+import { ArtsPage } from "./components/content/categories/Arts";
 
 function App() {
 
@@ -27,10 +26,10 @@ function App() {
         <Route path="/photos" element={<Photos />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
-        <Route path="/video/music" element={<Music />} />
-        <Route path="/video/arts" element={<Arts />} />
+        <Route path="/video/music" element={<MusicPage />} />
+        <Route path="/video/arts" element={<ArtsPage />} />
+        <Route path="/video/film" element={<FilmPage />} />
         <Route path="/video/entertainment" element={<Entertainment />} />
-        <Route path="/video/entertainment/film" element={<Film />} />
         <Route path="*" element={<Error />} />
       </Routes>
     </>

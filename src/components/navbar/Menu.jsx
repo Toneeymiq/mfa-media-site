@@ -16,13 +16,6 @@ const Menu = (props) => {
                          been produced in Mpesa Foundation Academy by the Media students"
           />
         </Link>
-        {/* <Link to="/design">
-          <p onClick={props.onClick}>DESIGN</p>
-          <HoverMenu
-            description="Get to see designs that have been made by 
-                         the MFA students, including graphic designs, Blender Models, e.t.c"
-          />
-        </Link> */}
         <Link to="/photos">
           <p onClick={props.onClick}>PHOTOS</p>
           <HoverMenu

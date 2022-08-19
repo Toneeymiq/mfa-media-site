@@ -4,9 +4,10 @@
 
 :root {
   --background: rgb(255, 255, 255);
+  --nav-background: #c2c2c291;
   --text-color-h1: rgb(8, 3, 3);
   --text-color: rgb(0, 0, 0);
-  --title-color: rgb(25, 9, 9);
+  --title-color: rgb(0, 0, 0);
   --logo-filter: invert(1);
   --error-color: deepskyblue;
   --header-font-family: Cambria, Cochin, Georgia, Times, "Times New Roman",
@@ -16,6 +17,7 @@
 }
 
 [data-theme="Dark"] {
+  --nav-background: #000000d1;
   --background: #000;
   --title-color: rgb(110 208 255);
   --logo-filter: none;
@@ -48,8 +50,6 @@ button.slick-next {
 
 button.slick-prev::before {
   z-index: 1;
-}
-button.slick-arrow::before {
 }
 
 button.slick-arrow::before {

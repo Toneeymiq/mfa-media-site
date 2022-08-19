@@ -21,11 +21,12 @@ Animations .fade_in {
 }
 
 .nav_container {
-  background: var(--background);
+  background: var(--nav-background);
   display: flex;
-  position: fixed;
+  position: sticky;
   width: 100%;
-  box-shadow: 1px 1px 5px 1px #0000001c;
+  height: 65px;
+  box-shadow: 1px 1px 5px 1px #00000069;
   justify-content: space-between;
   align-items: center;
   top: 0;
@@ -93,7 +94,7 @@ Animations .fade_in {
 
 .logo {
   margin: 0 2rem;
-  margin-top: .4rem;
+  margin-top: 0.4rem;
 }
 
 .logo img {
@@ -104,7 +105,7 @@ Animations .fade_in {
 .navbar_menu_container {
   display: none;
   position: absolute;
-  background: var(--background);
+  background: var(--nav-background);
   -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 1);
   -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 1);
   box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 33%);
@@ -141,7 +142,7 @@ Animations .fade_in {
   box-shadow: -2px 2px 5px 0px rgba(0, 0, 0, 0.59);
   opacity: 0;
   visibility: hidden;
-  transition: .3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
 }
 
 .hover_content {
@@ -162,13 +163,10 @@ Animations .fade_in {
   z-index: -1;
 }
 
-
 .theme_container p1 {
   padding: 0 8px 0 0;
   color: var(--text-color);
- 
 }
-
 
 @media screen and (max-width: 1040px) {
   .nav_bar_menu {
@@ -227,7 +225,7 @@ Animations .fade_in {
 @media screen and (max-width: 700px) {
   .logo {
     margin: 0 1rem;
-    margin-top: .4rem;
+    margin-top: 0.4rem;
   }
 
   .nav_bar_about {
@@ -277,9 +275,15 @@ Animations .fade_in {
   .navbar_menu_container {
     width: 100%;
     height: 100vh;
+    background: #000000b8;
     right: 0;
     top: 0;
     justify-content: center;
+  }
+
+  .nav_bar_links p,
+  .menu_about_links p {
+    color: white;
   }
 
   .navbar_menu_container p {
@@ -303,13 +307,13 @@ Animations .fade_in {
   }
 }
 
-@media screen and (max-width:320px) {
+@media screen and (max-width: 320px) {
   .logo {
     margin: 0;
   }
 }
 
-@media screen and (max-width:319px) {
+@media screen and (max-width: 319px) {
   .theme_container p1 {
     display: none;
   }

@@ -39,7 +39,7 @@
   
 .theme_div {
   position: absolute;
-  background: var(--background);
+  background: var(--nav-background);
   display: flex;
   flex-wrap: wrap;
   color: var(--text-color);

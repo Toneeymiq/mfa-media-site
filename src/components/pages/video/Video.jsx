@@ -14,10 +14,10 @@ function VideoContent() {
   return (
     <div className={`${HomeCss.content} ${VideoCss.film_container}`}>
       <div className={HomeCss.film_title}>
-        <h1>Videos</h1>
       </div>
       { MusicLinks.map((value) => {
         return (
+
           <ContentBox 
             title={value.title}
             description={value.Description}

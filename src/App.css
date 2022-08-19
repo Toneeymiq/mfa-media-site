@@ -8,3 +8,15 @@ body a {
   color: unset;
 }
 
+::-webkit-input-placeholder {
+  color: var(--text-color);
+}
+:-moz-placeholder { /* Upto Firefox 18, Deprecated in Firefox 19  */
+  color: var(--text-color);  
+}
+::-moz-placeholder {  /* Firefox 19+ */
+  color: var(--text-color);  
+}
+:-ms-input-placeholder {  
+  color: var(--text-color);  
+}

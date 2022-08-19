@@ -2,8 +2,13 @@
   .container{
     /* width: 90%; */
     margin: 0 auto;
-    padding: 1rem;
-  }
+    padding: 2%;
+    margin: 5% 0.5rem;
+    border-radius: 10px;
+    box-shadow: 0.5px 0.5px 5px 0.5px #00000045;
+    background: #6060601c;
+}
+  
 
 
   .card {
@@ -26,6 +31,7 @@
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
+    box-shadow: 0 0 5px 0 #000;
   }
 
   .card_top img:hover {
