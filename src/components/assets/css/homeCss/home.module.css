@@ -2,6 +2,8 @@
   display: flex;
   flex-wrap: wrap;
   padding: 1rem 0;
+  background: #6060601c;
+  box-shadow: 0.5px 0.5px 5px 0.5px #00000045;
 }
 
 .content_box {
