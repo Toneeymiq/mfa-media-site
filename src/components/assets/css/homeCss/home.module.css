@@ -1,7 +1,7 @@
 .content {
   display: flex;
   flex-wrap: wrap;
-  padding: 1rem;
+  padding: .3rem;
   background: #6060601c;
   margin: 0 1rem;
   border-radius: 10px;
@@ -244,7 +244,7 @@
   }
 
   .content_box {
-    width: 32%;
+    width: 31.9%;
   }
 
 
@@ -252,7 +252,7 @@
 
 @media screen and (min-width: 1024px) {
   .content_box {
-    width: 24%;
+    width: 23.9%;
     margin: 0.3rem 0;
   }
 
