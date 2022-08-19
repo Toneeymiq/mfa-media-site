@@ -1,8 +1,10 @@
 .content {
   display: flex;
   flex-wrap: wrap;
-  padding: 1rem 0;
+  padding: 1rem;
   background: #6060601c;
+  margin: 0 1rem;
+  border-radius: 10px;
   box-shadow: 0.5px 0.5px 5px 0.5px #00000045;
 }
 
@@ -200,6 +202,7 @@
     width: 47.5%;
     margin: 0rem 0;
   }
+
 }
 
 @media screen and (max-width: 425px) {
@@ -214,6 +217,10 @@
 
   .film_title {
     left: 23px;
+  }
+
+  .content {
+    margin: 0 .5rem;
   }
 }
 

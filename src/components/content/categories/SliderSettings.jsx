@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import SliderCss from "../../assets/css/overallCss/sliderCss.module.css";
 
 export const settings = {
-  infinite: false,
+  infinite: true,
   speed: 500,
   slidesToShow: 6,
   slidesToScroll: 4,
