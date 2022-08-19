@@ -61,6 +61,43 @@ const ArtsLinks = [
     category: "arts",
     path: "#/video/arts"
   },
+      {
+        link: (
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/ot_c75rjNdo"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen="allowfullscreen"
+          ></iframe>
+        ),
+        title: "Blender Car Animation",
+        Description: "Blender Model by Miqkniq",
+        image: CarModel,
+        category: "arts",
+        path: "#/video/arts"
+      },
+
+  {
+    link: (
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/Eh9DVNfoPlk"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen="allowfullscreen"
+      ></iframe>
+    ),
+    title: "Blender Snow House Model",
+    Description: "Blender Model by Miqkniq",
+    image: SnowHouseModel,
+    category: "arts",
+    path: "#/video/arts"
+  },
   
   {
     link: (

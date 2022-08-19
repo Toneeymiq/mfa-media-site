@@ -15,7 +15,6 @@ export const settings = {
       settings: {
         slidesToShow: 4,
         slidesToScroll: 3,
-        infinite: true,
       },
     },
     {
