@@ -10,7 +10,7 @@
   
   .search_bar input {
     width: 100%;
-    background: #0000005c;
+    background: var(--nav-background);
     color: white;
     border-style: none;
     margin: 0 .3rem;
