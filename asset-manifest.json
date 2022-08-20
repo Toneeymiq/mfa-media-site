@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/mfa-media-site/static/css/main.b66e90fc.css",
+    "main.css": "/mfa-media-site/static/css/main.f7de5684.css",
     "main.js": "/mfa-media-site/static/js/main.814242e0.js",
     "static/media/background.jpg": "/mfa-media-site/static/media/background.59745aee2ce50dc10610.jpg",
     "static/media/nikon2.jpg": "/mfa-media-site/static/media/nikon2.f0b066de6fb34ce6de0b.jpg",
@@ -43,11 +43,11 @@
     "static/media/slick.ttf": "/mfa-media-site/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "index.html": "/mfa-media-site/index.html",
     "static/media/slick.woff": "/mfa-media-site/static/media/slick.295183786cd8a1389865.woff",
-    "main.b66e90fc.css.map": "/mfa-media-site/static/css/main.b66e90fc.css.map",
+    "main.f7de5684.css.map": "/mfa-media-site/static/css/main.f7de5684.css.map",
     "main.814242e0.js.map": "/mfa-media-site/static/js/main.814242e0.js.map"
   },
   "entrypoints": [
-    "static/css/main.b66e90fc.css",
+    "static/css/main.f7de5684.css",
     "static/js/main.814242e0.js"
   ]
 }
