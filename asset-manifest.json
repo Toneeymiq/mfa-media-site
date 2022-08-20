@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mfa-media-site/static/css/main.f7de5684.css",
-    "main.js": "/mfa-media-site/static/js/main.0be497ff.js",
+    "main.css": "/mfa-media-site/static/css/main.958a168f.css",
+    "main.js": "/mfa-media-site/static/js/main.3d721022.js",
     "static/media/background.jpg": "/mfa-media-site/static/media/background.59745aee2ce50dc10610.jpg",
     "static/media/nikon2.jpg": "/mfa-media-site/static/media/nikon2.f0b066de6fb34ce6de0b.jpg",
     "static/media/working-in-dollars.png": "/mfa-media-site/static/media/working-in-dollars.682cd8b80937388f293c.png",
@@ -43,11 +43,11 @@
     "static/media/slick.ttf": "/mfa-media-site/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "index.html": "/mfa-media-site/index.html",
     "static/media/slick.woff": "/mfa-media-site/static/media/slick.295183786cd8a1389865.woff",
-    "main.f7de5684.css.map": "/mfa-media-site/static/css/main.f7de5684.css.map",
-    "main.0be497ff.js.map": "/mfa-media-site/static/js/main.0be497ff.js.map"
+    "main.958a168f.css.map": "/mfa-media-site/static/css/main.958a168f.css.map",
+    "main.3d721022.js.map": "/mfa-media-site/static/js/main.3d721022.js.map"
   },
   "entrypoints": [
-    "static/css/main.f7de5684.css",
-    "static/js/main.0be497ff.js"
+    "static/css/main.958a168f.css",
+    "static/js/main.3d721022.js"
   ]
 }
