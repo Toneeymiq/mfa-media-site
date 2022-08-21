@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mfa-media-site/static/css/main.d301d375.css",
-    "main.js": "/mfa-media-site/static/js/main.f8805632.js",
+    "main.css": "/mfa-media-site/static/css/main.298eca2d.css",
+    "main.js": "/mfa-media-site/static/js/main.9df94678.js",
     "static/media/background.jpg": "/mfa-media-site/static/media/background.59745aee2ce50dc10610.jpg",
     "static/media/nikon2.jpg": "/mfa-media-site/static/media/nikon2.f0b066de6fb34ce6de0b.jpg",
     "static/media/working-in-dollars.png": "/mfa-media-site/static/media/working-in-dollars.682cd8b80937388f293c.png",
@@ -39,15 +39,15 @@
     "static/media/lift-me-up-lyric.jpg": "/mfa-media-site/static/media/lift-me-up-lyric.4a181c0a7a628afc3fa5.jpg",
     "static/media/wish-i-could-erase.jpg": "/mfa-media-site/static/media/wish-i-could-erase.63564e19a276bc77398c.jpg",
     "static/media/slick.svg": "/mfa-media-site/static/media/slick.2630a3e3eab21c607e21.svg",
+    "index.html": "/mfa-media-site/index.html",
     "static/media/slick.eot": "/mfa-media-site/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/mfa-media-site/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "index.html": "/mfa-media-site/index.html",
     "static/media/slick.woff": "/mfa-media-site/static/media/slick.295183786cd8a1389865.woff",
-    "main.d301d375.css.map": "/mfa-media-site/static/css/main.d301d375.css.map",
-    "main.f8805632.js.map": "/mfa-media-site/static/js/main.f8805632.js.map"
+    "main.298eca2d.css.map": "/mfa-media-site/static/css/main.298eca2d.css.map",
+    "main.9df94678.js.map": "/mfa-media-site/static/js/main.9df94678.js.map"
   },
   "entrypoints": [
-    "static/css/main.d301d375.css",
-    "static/js/main.f8805632.js"
+    "static/css/main.298eca2d.css",
+    "static/js/main.9df94678.js"
   ]
 }
