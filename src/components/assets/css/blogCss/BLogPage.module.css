@@ -1,0 +1,79 @@
+/* 
+<div>
+<div>
+  <h2>{value.title}</h2>
+  <div>
+    <p>{value.Description}</p>
+  </div>
+  {ReadMore ? (
+    <div className={BlogCss.readmore_container}>
+      <div>
+        <h2>Sample Tilte</h2>
+        <div>
+          <h3>{value.title}</h3>
+          <img src={value.image} alt="" />
+        </div>
+      </div>
+      <div>
+      <div onClick={() => setReadMore(false)}>Back</div>
+        <p>{value.Description}</p>
+      </div>
+    </div>
+  ) : (
+    <div onClick={() => setReadMore(true)}>Read More</div>
+  )}
+</div>
+</div> */
+
+.blog_container {
+  padding: 3% 10%;
+}
+
+.blog_content {
+  display: flex;
+  background: #b6b6b624;
+  display: flex;
+  flex-wrap: wrap;
+}
+.blog_content p {
+  padding: 0;
+  margin: 0;
+  line-height: 1.5rem;
+  word-spacing: .2rem;
+  color: rgb(123, 118, 95);;
+}
+
+.blog_description {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+}
+
+.blog_title h2 {
+  color: rgb(0, 130, 173);;
+}
+.content_image {
+  height: 300px;
+  overflow: hidden;
+
+}
+
+.content_image,
+.blog_description {
+  /* padding: 0.5rem; */
+  /* margin: 0.5rem; */
+  width: 100%;
+
+}
+
+
+.content_image img {
+  width: 100%;
+}
+.date {
+  padding: .5rem 0;
+}
+
+.date p{
+  color: rgba(139, 139, 139, 0.714);
+}

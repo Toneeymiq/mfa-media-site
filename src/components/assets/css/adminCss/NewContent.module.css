@@ -1,0 +1,84 @@
+.new_content_container {
+  background: rgb(18, 18, 18);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.new_content_container h2 {
+  color: rgb(0, 181, 117);
+}
+
+.form {
+    padding: 1rem;
+    width: 80%;
+    background: #141414;
+    border-radius: 10px;
+    box-shadow: 0px 1px 9px 7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 1px 20px 7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 1px 20px 7px rgba(0,0,0,0.75);
+  }
+
+  
+  .control {
+    margin-bottom: 0.5rem;
+    padding: 0 1rem;
+  }
+  
+  .control label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    margin-left: .3rem;
+    color: rgb(0, 160, 163);
+  }
+  
+  .control input,
+  .control textarea {
+    display: block;
+    font: inherit;
+    border-radius: 4px;
+    border: 1px solid rgba(204, 204, 204, 0.174);
+    padding: 0.25rem;
+    width: 100%;
+    background: rgb(32, 32, 32);
+    color: rgb(171, 173, 121);
+  }
+  
+  .actions {
+    margin-top: 1rem;
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .actions button, .back_btn {
+    font: inherit;
+    cursor: pointer;
+    background-color: #232323;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid #383838;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: .3s ease-in-out;
+  }
+  
+  .actions button:hover,
+  .actions button:active,
+  .back_btn:hover {
+    background-color: #191919;
+    border-color: #2b2b2b;
+    transform: scale(1.05);
+  }
+
+  .back_btn {
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+  }

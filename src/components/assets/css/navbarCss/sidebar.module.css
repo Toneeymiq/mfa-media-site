@@ -1,0 +1,24 @@
+.sidebar_links p {
+    margin: 0;
+    padding: .5rem;
+    color: var(--text-color);
+}
+
+.sidebar_links h1 {
+    font-size: 20px;
+    margin: 0;
+    padding: 1rem 0 .2rem;
+    color: var(--title-color);
+    font-weight: 500;
+}
+
+.sidebar_links {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3rem;
+}
+
+.links_container {
+    padding: 0;
+}
+

@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body a {
+  text-decoration: none;
+  color: unset;
+}
+
+/* body p, body h1{
+  font-family: 'Barlow', sans-serif;
+} */
+
+::-webkit-input-placeholder {
+  color: var(--text-color);
+}
+:-moz-placeholder { /* Upto Firefox 18, Deprecated in Firefox 19  */
+  color: var(--text-color);  
+}
+::-moz-placeholder {  /* Firefox 19+ */
+  color: var(--text-color);  
+}
+:-ms-input-placeholder {  
+  color: var(--text-color);  
+}

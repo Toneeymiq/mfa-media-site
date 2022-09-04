@@ -1,0 +1,47 @@
+
+.welcome_message {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.welcome_message p {
+  border-left: 2px solid deepskyblue;
+}
+
+.welcome_message h1,
+p {
+  color: deepskyblue;
+  padding: 2rem;
+  margin: 1rem;
+}
+
+.slider_container {
+  margin: 0 auto;
+  padding: .5rem .5rem;
+  margin-bottom: -20px;
+}
+
+.slider_images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.slider_images h1 {
+  z-index: 1;
+  color: aliceblue;
+  position: fixed;
+  z-index: 10;
+}
+
+@media screen and (max-width: 425px) {
+  .welcome_message h1,
+  p {
+    padding: 0.5rem;
+    margin: 0.5rem;
+  }
+}

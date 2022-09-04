@@ -1,0 +1,76 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+:root {
+  --background: rgb(255, 255, 255);
+  --nav-background: #ffffffd8;
+  --text-color-h1: rgb(8, 3, 3);
+  --text-color: rgb(0, 0, 0);
+  --title-color: rgb(0, 0, 0);
+  --logo-filter: invert(1);
+  --error-color: deepskyblue;
+  --header-font-family: Cambria, Cochin, Georgia, Times, "Times New Roman",
+    serif;
+  --content-font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
+    sans-serif;
+}
+
+[data-theme="Dark"] {
+  --nav-background: #000000d1;
+  --background: #000;
+  --title-color: rgb(110 208 255);
+  --logo-filter: none;
+  --text-color-h1: rgb(0, 0, 0);
+  --text-color: rgb(255, 255, 255);
+  --error-color: rgb(255, 142, 142);
+}
+
+
+
+
+body {
+  font-family: 'Barlow', sans-serif;
+  background: black;
+}
+
+.slick-slide > div {
+  margin: 0 4px;
+}
+div.slick-slider {
+  margin-bottom: -10px;
+}
+
+button.slick-prev {
+  left: 10px;
+  z-index: 1;
+}
+button.slick-next {
+  right: 10px;
+}
+
+button.slick-prev::before {
+  z-index: 1;
+}
+
+button.slick-arrow::before {
+  color: deepskyblue;
+  font-size: 25px;
+}
+
+
+.slick-dots li {
+  background: rgb(71, 71, 71);
+  border-radius: 10px;
+}
+
+.slick-dots li.slick-active button:before {
+  border-radius: 10px;
+  background:   rgb(203, 203, 203);
+}
+
+
+.slick-dots li.slick-active button::before {
+  color: deepskyblue;
+}
+

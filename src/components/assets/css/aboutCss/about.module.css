@@ -1,0 +1,28 @@
+.about_container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.about_content {
+    margin: 2rem;
+    padding: 2rem;
+    text-align: -webkit-center;}
+
+.about_content h1 {
+    color: cornflowerblue;;
+}
+
+.about_content p a {
+    color: rgb(100, 184, 237);
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+.about_content p {
+    color: grey;
+    filter: brightness(0.5);
+}

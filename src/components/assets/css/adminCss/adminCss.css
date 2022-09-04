@@ -1,0 +1,57 @@
+.clicked_link {
+  display: none;
+  margin-left: 1.5rem;
+}
+.clicked_link  p{
+    color: rgb(7, 166, 181);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.clicked_link  p:hover {
+    color: rgb(2, 131, 143);
+}
+.category_title li {
+  cursor: pointer;
+  list-style: none;
+  color: rgb(16, 196, 163);
+  display: flex;
+}
+
+
+/* Adding Videos Checkbox */
+#add_music:checked ~ .clicked_link,
+#add_clubs_video:checked ~ .clicked_link,
+#add_mini-documentaries:checked ~ .clicked_link,
+#add_advert_video:checked ~ .clicked_link,
+#add_film:checked ~ .clicked_link,
+#add_arts_video:checked ~ .clicked_link,
+#add_educational_video:checked ~ .clicked_link,
+#add_news_video:checked ~ .clicked_link,
+
+/* Adding Photos Checkbox */
+#add_arts_photo:checked ~ .clicked_link,
+#add_news_photo:checked ~ .clicked_link,
+#add_sports_photo:checked ~ .clicked_link,
+#add_educational_photo:checked ~ .clicked_link,
+#add_clubs_photo:checked ~ .clicked_link,
+
+/* Adding Blog Checkbox */
+#add_arts_blog:checked ~ .clicked_link,
+#add_news_blog:checked ~ .clicked_link,
+#add_clubs_blog:checked ~ .clicked_link,
+#add_sports_blog:checked ~ .clicked_link,
+#add_educational_blog:checked ~ .clicked_link,
+#add_innovation_blog:checked ~ .clicked_link
+ {
+  display: block;
+}
+
+
+
+
+.category_title li:hover {
+    color: rgb(3, 106, 87);
+}
