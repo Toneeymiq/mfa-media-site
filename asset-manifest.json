@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mfa-media-site/static/css/main.98904851.css",
-    "main.js": "/mfa-media-site/static/js/main.0f11afb6.js",
+    "main.css": "/mfa-media-site/static/css/main.f6380335.css",
+    "main.js": "/mfa-media-site/static/js/main.79483151.js",
     "static/media/background.jpg": "/mfa-media-site/static/media/background.59745aee2ce50dc10610.jpg",
     "static/media/nikon2.jpg": "/mfa-media-site/static/media/nikon2.f0b066de6fb34ce6de0b.jpg",
     "static/media/nikon.jpg": "/mfa-media-site/static/media/nikon.39b3e43f02bc77046566.jpg",
@@ -11,11 +11,11 @@
     "static/media/slick.eot": "/mfa-media-site/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/mfa-media-site/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/mfa-media-site/static/media/slick.295183786cd8a1389865.woff",
-    "main.98904851.css.map": "/mfa-media-site/static/css/main.98904851.css.map",
-    "main.0f11afb6.js.map": "/mfa-media-site/static/js/main.0f11afb6.js.map"
+    "main.f6380335.css.map": "/mfa-media-site/static/css/main.f6380335.css.map",
+    "main.79483151.js.map": "/mfa-media-site/static/js/main.79483151.js.map"
   },
   "entrypoints": [
-    "static/css/main.98904851.css",
-    "static/js/main.0f11afb6.js"
+    "static/css/main.f6380335.css",
+    "static/js/main.79483151.js"
   ]
 }
