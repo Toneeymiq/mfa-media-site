@@ -2,6 +2,12 @@ import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import SliderCss from "../../assets/css/overallCss/sliderCss.module.css";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
+
+
 export const settings = {
   speed: 500,
   slidesToShow: 6,
@@ -53,7 +59,8 @@ function SliderSettings(props) {
           <Slider {...settings}>
             {props.mapping.map((item) => {
               return (
-                <div className={SliderCss.card}>
+                <div  data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom"  className={SliderCss.card}>
                   <div className={SliderCss.card_top}>
                     <a href={item.path}>
                       <img src={item.image} alt={item.title} />
