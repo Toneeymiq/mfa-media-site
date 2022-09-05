@@ -1,23 +1,73 @@
 .iframe_container {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%;
-    z-index: 2;
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  z-index: 2;
 }
 
 .iframe_container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .photo_container {
-    width: 100%;
+  width: 100%;
+  background: #f6f6f6;
+  border-radius: 10px;
 }
 .category_title {
-    margin: 0 1rem;
-    padding: 1rem .5rem 0.3rem 1.5rem;
-    color: rgb(0, 157, 214);
+  margin: 0 1rem;
+  padding: 1rem 0.5rem 0.3rem 1.5rem;
+  color: rgb(0, 157, 214);
+}
+
+.photo_container p {
+  padding: 0.5rem;
+  margin: 1rem 0;
+  color: deepskyblue;
+}
+
+.Clickedimage_description {
+  display: flex;
+  align-items: center;
+  margin: .3rem 0;
+}
+.external_link {
+  font-size: 10px;
+  /* padding: .2rem .5rem; */
+  display: flex;
+  align-items: center;
+}
+
+.clickedimage_title {
+  width: 100%;
+  padding: 0 .3rem;
+}
+.clickedimage_title h2 {
+    padding: 0;
+    margin: 0;
+    color: rgb(120, 51, 51);
+    display: flex;
+    align-items: center;
+}
+.clickedimage_title h3 {
+  color: deepskyblue;
+}
+.clickedimage_title P {
+    color: rgb(37, 31, 23);
+}
+
+.clickedimage_title p,
+.clickedimage_title h3 {
+  padding: 0;
+  margin: 0;
+  padding: 0 0.5rem;
+  font-size: 15px;
+}
+
+.arrow {
+    margin-left: .5rem;
 }
