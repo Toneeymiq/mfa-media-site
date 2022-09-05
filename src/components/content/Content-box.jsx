@@ -3,21 +3,26 @@ import { useState } from "react";
 import { RiCloseLine } from "react-icons/ri";
 import VideoModal from "../pages/video/VideoModal";
 import AnimationCss from "../assets/css/overallCss/animations.module.css";
+import  AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
 
 function ContentBox(props) {
   const [toggleVideo, setToggleVideo] = useState(false);
 
   return (
     <>
-      <div
+      <div 
         className={`${HomeCss.content_box} ${HomeCss.photos}`}
         onClick={props.onClick}
+
         >
           {toggleVideo ? (
             <></>
           ) : (
             <>
-              <div onClick={() => setToggleVideo(true)}>{props.image} </div>
+              <div  onClick={() => setToggleVideo(true)} >{props.image}</div>
               <div className={HomeCss.content_description}>
                 <h1 className={HomeCss.content_title} onClick={() => setToggleVideo(true)}>{props.title}</h1>
                 <p className={HomeCss.content_text}>{props.name}</p>

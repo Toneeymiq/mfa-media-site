@@ -15,7 +15,7 @@ function PhotoArtsList(props) {
                 title={value.title}
                 name={"By " + value.Name}
                 image={
-                  <div>
+                  <div >
                     <img src={value.image} alt={value.title} />
                   </div>
                 }

@@ -32,6 +32,8 @@ export const settings = {
         slidesToScroll: 2,
         infinite: true,
       },
+    },
+      {
       breakpoint: 375,
       settings: {
         slidesToShow: 2,
