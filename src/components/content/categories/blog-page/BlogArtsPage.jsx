@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
 import BlogArtsContent from "./BlogArtsContent";
 
+import { ColorRing } from "react-loader-spinner";
+import "react-loader-spinner";
+
 export function BlogArtsPage(props) {
   const [isLoading, setisLoading] = useState(true);
   const [loadedMeetups, setloadedMeetups] = useState([]);
@@ -33,11 +36,23 @@ export function BlogArtsPage(props) {
   if (isLoading) {
     return (
       <section>
-        <p>Loading...</p>
+        <ColorRing
+          visible={true}
+          height="80"
+          width="80"
+          ariaLabel="blocks-loading"
+          wrapperStyle={{}}
+          wrapperClass="blocks-wrapper"
+          colors={["#e15b64", "#f47e60", "#f8b26a", "#abbd81", "#849b87"]}
+        />
       </section>
     );
   }
 
-  return <BlogArtsContent BlogsContent={loadedMeetups} path={"blog/arts/" + props.title} />;
+  return (
+    <BlogArtsContent
+      BlogsContent={loadedMeetups}
+      path={"blog/arts/" + props.title}
+    />
+  );
 }
-

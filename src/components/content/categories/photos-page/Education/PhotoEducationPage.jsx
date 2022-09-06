@@ -2,6 +2,9 @@ import SliderSettings from "../../SliderSettings";
 import { useState, useEffect } from "react";
 import PhotoEducationList from "./PhotoEducationList";
 
+import { ColorRing } from "react-loader-spinner";
+import "react-loader-spinner";
+
 export function PhotosEducationPage() {
   const [isLoading, setisLoading] = useState(true);
   const [loadedMeetups, setloadedMeetups] = useState([]);
@@ -34,12 +37,27 @@ export function PhotosEducationPage() {
   if (isLoading) {
     return (
       <section>
-        <p>Loading...</p>
+        <ColorRing
+          visible={true}
+          height="80"
+          width="80"
+          ariaLabel="blocks-loading"
+          wrapperStyle={{}}
+          wrapperClass="blocks-wrapper"
+          colors={[
+            "deepskyblue",
+            "deepskyblue",
+            "blue",
+            "deepskyblue",
+            "#849b87",
+          ]}
+        />
+        ;
       </section>
     );
   }
 
-  return <PhotoEducationList EducationLinks = {loadedMeetups} />;
+  return <PhotoEducationList EducationLinks={loadedMeetups} />;
 }
 
 export function PhotosEducationSlider() {
@@ -74,7 +92,21 @@ export function PhotosEducationSlider() {
   if (isLoading) {
     return (
       <section>
-        <p>Loading...</p>
+        <ColorRing
+          visible={true}
+          height="80"
+          width="80"
+          ariaLabel="blocks-loading"
+          wrapperStyle={{}}
+          wrapperClass="blocks-wrapper"
+          colors={[
+            "deepskyblue",
+            "deepskyblue",
+            "blue",
+            "deepskyblue",
+            "#849b87",
+          ]}
+        />
       </section>
     );
   }
@@ -89,5 +121,3 @@ export function PhotosEducationSlider() {
     </>
   );
 }
-
-  

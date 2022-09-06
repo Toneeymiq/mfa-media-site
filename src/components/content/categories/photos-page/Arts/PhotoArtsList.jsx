@@ -4,7 +4,7 @@ import HomeCss from "../../../../assets/css/homeCss/home.module.css";
 import ContentBox from "../../../Content-box";
 import VideoCss from "../../../../assets/css/VideoCss/VideoCss.module.css";
 import AnimationCss from "../../../../assets/css/overallCss/animations.module.css";
-import { BsArrowRight } from 'react-icons/bs';
+import {  RiExternalLinkLine } from 'react-icons/ri';
 
 
 
@@ -35,7 +35,7 @@ function PhotoArtsList(props) {
                         {" "}
                         <h2>
                           Visit Site
-                          <BsArrowRight className={VideoCss.arrow} />{" "}
+                          <RiExternalLinkLine size={25} className={VideoCss.arrow} />{" "}
                         </h2>
                       </a>
                     </div>

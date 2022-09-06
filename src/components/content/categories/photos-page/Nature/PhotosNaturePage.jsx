@@ -2,6 +2,9 @@ import SliderSettings from "../../SliderSettings";
 import { useState, useEffect } from "react";
 import PhotosNatureList from "./PhotosNatureList";
 
+import { ColorRing } from "react-loader-spinner";
+import "react-loader-spinner";
+
 export function PhotosNaturePage() {
   const [isLoading, setisLoading] = useState(true);
   const [loadedMeetups, setloadedMeetups] = useState([]);
@@ -34,7 +37,22 @@ export function PhotosNaturePage() {
   if (isLoading) {
     return (
       <section>
-        <p>Loading...</p>
+        <ColorRing
+          visible={true}
+          height="80"
+          width="80"
+          ariaLabel="blocks-loading"
+          wrapperStyle={{}}
+          wrapperClass="blocks-wrapper"
+          colors={[
+            "deepskyblue",
+            "deepskyblue",
+            "blue",
+            "deepskyblue",
+            "#849b87",
+          ]}
+        />
+        ;
       </section>
     );
   }
@@ -74,7 +92,21 @@ export function PhotosNatureSlider() {
   if (isLoading) {
     return (
       <section>
-        <p>Loading...</p>
+        <ColorRing
+          visible={true}
+          height="80"
+          width="80"
+          ariaLabel="blocks-loading"
+          wrapperStyle={{}}
+          wrapperClass="blocks-wrapper"
+          colors={[
+            "deepskyblue",
+            "deepskyblue",
+            "blue",
+            "deepskyblue",
+            "#849b87",
+          ]}
+        />
       </section>
     );
   }
@@ -89,5 +121,3 @@ export function PhotosNatureSlider() {
     </>
   );
 }
-
-  
