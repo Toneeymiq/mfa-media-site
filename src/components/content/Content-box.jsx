@@ -21,7 +21,7 @@ function ContentBox(props) {
           <></>
         ) : (
           <>
-            <div  data-aos="zoom-out-up"
+            <div data-aos="fade-up"
               onClick={() => setToggleVideo(true)}
             >
               {props.image}

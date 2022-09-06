@@ -1,10 +1,15 @@
 import SidebarCss from "../assets/css//navbarCss/sidebar.module.css";
 import { Link } from "react-router-dom";
 import {  BsImage } from 'react-icons/bs'
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init();
+
 
 function SideBar(props) {
   return (
-    <div className={SidebarCss.sidebar_container}>
+    <div data-aos="zoom-out-up"   className={SidebarCss.sidebar_container}>
       <div className={SidebarCss.sidebar_links}>
         <ul className={SidebarCss.links_container}>
           <div className={SidebarCss.sidebar_video_links}>
