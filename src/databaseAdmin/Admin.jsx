@@ -189,6 +189,19 @@ function Admin(props) {
               category="clubs_photo"
               categoryName="photoClubsLinks.json"
             />
+            <AdminLinks
+              linkTitle="Nature"
+              path="photos/nature"
+              input={
+                <input
+                  type="checkbox"
+                  id="add_nature_photo"
+                  className={AdminCss.add_checkbox}
+                />
+              }
+              category="nature_photo"
+              categoryName="photoNatureLinks.json"
+            />
           </ul>
 
           <h4>Add BLog Content</h4>

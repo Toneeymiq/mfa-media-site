@@ -1,15 +1,15 @@
-import SliderSettings from "../SliderSettings";
+import SliderSettings from "../../SliderSettings";
 import { useState, useEffect } from "react";
-import PhotoNewsList from "./PhotosNewsList";
+import PhotosNatureList from "./PhotosNatureList";
 
-export function PhotoNewsPage() {
+export function PhotosNaturePage() {
   const [isLoading, setisLoading] = useState(true);
   const [loadedMeetups, setloadedMeetups] = useState([]);
 
   useEffect(() => {
     setisLoading(true);
     fetch(
-      "https://mfa-media-site-database-default-rtdb.firebaseio.com/photoNewsLinks.json"
+      "https://mfa-media-site-database-default-rtdb.firebaseio.com/photoNatureLinks.json"
     )
       .then((response) => {
         return response.json();
@@ -39,17 +39,17 @@ export function PhotoNewsPage() {
     );
   }
 
-  return <PhotoNewsList NewsLinks={loadedMeetups} />;
+  return <PhotosNatureList NatureLinks={loadedMeetups} />;
 }
 
-export function PhotoArtsSlider() {
+export function PhotosNatureSlider() {
   const [isLoading, setisLoading] = useState(true);
   const [loadedMeetups, setloadedMeetups] = useState([]);
 
   useEffect(() => {
     setisLoading(true);
     fetch(
-      "https://mfa-media-site-database-default-rtdb.firebaseio.com/photoNewsLinks.json"
+      "https://mfa-media-site-database-default-rtdb.firebaseio.com/photoNatureLinks.json"
     )
       .then((response) => {
         return response.json();
@@ -83,9 +83,11 @@ export function PhotoArtsSlider() {
     <>
       <SliderSettings
         mapping={loadedMeetups}
-        category="News & Events Photos"
-        path="/photos/news&events"
+        category="Nature"
+        path="photos/nature"
       />
     </>
   );
 }
+
+  

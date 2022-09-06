@@ -1,15 +1,16 @@
-import SliderSettings from "../SliderSettings";
+import SliderSettings from "../../SliderSettings";
 import { useState, useEffect } from "react";
-import PhotoEducationList from "./PhotoEducationList";
+import PhotoSportsList from "./PhotosSportsList";
+// import PhotoSportsList from "./PhotosSportsList";
 
-export function PhotosEducationPage() {
+export function PhotoSportsPage() {
   const [isLoading, setisLoading] = useState(true);
   const [loadedMeetups, setloadedMeetups] = useState([]);
 
   useEffect(() => {
     setisLoading(true);
     fetch(
-      "https://mfa-media-site-database-default-rtdb.firebaseio.com/photoEducationLinks.json"
+      "https://mfa-media-site-database-default-rtdb.firebaseio.com/photoSportsLinks.json"
     )
       .then((response) => {
         return response.json();
@@ -39,17 +40,17 @@ export function PhotosEducationPage() {
     );
   }
 
-  return <PhotoEducationList EducationLinks = {loadedMeetups} />;
+  return <PhotoSportsList SportsLinks={loadedMeetups} />;
 }
 
-export function PhotosEducationSlider() {
+export function PhotoArtsSlider() {
   const [isLoading, setisLoading] = useState(true);
   const [loadedMeetups, setloadedMeetups] = useState([]);
 
   useEffect(() => {
     setisLoading(true);
     fetch(
-      "https://mfa-media-site-database-default-rtdb.firebaseio.com/photoEducationLinks.json"
+      "https://mfa-media-site-database-default-rtdb.firebaseio.com/photoSportsLinks.json"
     )
       .then((response) => {
         return response.json();
@@ -83,11 +84,9 @@ export function PhotosEducationSlider() {
     <>
       <SliderSettings
         mapping={loadedMeetups}
-        category="Education Photos"
-        path="/photos/educational"
+        category="Sports Photos"
+        path="/photos/sports"
       />
     </>
   );
 }
-
-  

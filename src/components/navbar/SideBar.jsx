@@ -55,6 +55,9 @@ function SideBar(props) {
             <Link to="photos/education">
               <p onClick={props.onClick}>🎓 Educational</p>
             </Link>
+            <Link to="photos/nature">
+              <p onClick={props.onClick}>🎓 Nature</p>
+            </Link>
     
           </div>
 

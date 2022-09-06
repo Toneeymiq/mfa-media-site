@@ -1,4 +1,4 @@
-import SliderSettings from "../SliderSettings";
+import SliderSettings from "../../SliderSettings";
 import { useState, useEffect } from "react";
 import PhotoArtsList from "./PhotoArtsList";
 

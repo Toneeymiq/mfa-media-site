@@ -1,17 +1,16 @@
-import React from "react";
-import HomeCss from "../../../assets/css/homeCss/home.module.css";
+import HomeCss from "../../../../assets/css/homeCss/home.module.css";
 
-import ContentBox from "../../Content-box";
-import VideoCss from "../../../assets/css/VideoCss/VideoCss.module.css";
-import AnimationCss from "../../../assets/css/overallCss/animations.module.css";
-import { BsArrowRight } from "react-icons/bs";
+import ContentBox from "../../../Content-box";
+import VideoCss from "../../../../assets/css/VideoCss/VideoCss.module.css";
+import AnimationCss from "../../../../assets/css/overallCss/animations.module.css";
+import { BsArrowRight } from 'react-icons/bs';
 
-function PhotoClubsList(props) {
+function PhotoSportsList(props) {
   return (
     <>
-      <div className={VideoCss.category_title}>Clubs Photos</div>
+      <div className={VideoCss.category_title}>Sports Photos</div>
       <div className={`${HomeCss.content} ${VideoCss.film_container}`}>
-        {props.ClubsLinks.map((value) => (
+        {props.SportsLinks.map((value) => (
           <ContentBox
             title={value.title}
             name={"By " + value.Name}
@@ -51,4 +50,4 @@ function PhotoClubsList(props) {
   );
 }
 
-export default PhotoClubsList;
+export default PhotoSportsList;

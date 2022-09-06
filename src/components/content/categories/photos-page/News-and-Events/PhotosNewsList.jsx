@@ -1,16 +1,16 @@
-import HomeCss from "../../../assets/css/homeCss/home.module.css";
+import HomeCss from "../../../../assets/css/homeCss/home.module.css";
 
-import ContentBox from "../../Content-box";
-import VideoCss from "../../../assets/css/VideoCss/VideoCss.module.css";
-import AnimationCss from "../../../assets/css/overallCss/animations.module.css";
-import { BsArrowRight } from "react-icons/bs";
+import ContentBox from "../../../Content-box";
+import VideoCss from "../../../../assets/css/VideoCss/VideoCss.module.css";
+import AnimationCss from "../../../../assets/css/overallCss/animations.module.css";
+import { BsArrowRight } from 'react-icons/bs';
 
-function PhotoSportsList(props) {
+function PhotoNewsList(props) {
   return (
     <>
-      <div className={VideoCss.category_title}>Sports Photos</div>
+      <div className={VideoCss.category_title}>News Photos</div>
       <div className={`${HomeCss.content} ${VideoCss.film_container}`}>
-        {props.SportsLinks.map((value) => (
+        {props.NewsLinks.map((value) => (
           <ContentBox
             title={value.title}
             name={"By " + value.Name}
@@ -50,4 +50,4 @@ function PhotoSportsList(props) {
   );
 }
 
-export default PhotoSportsList;
+export default PhotoNewsList;

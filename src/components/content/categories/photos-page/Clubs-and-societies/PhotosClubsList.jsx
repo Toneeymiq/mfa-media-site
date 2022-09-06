@@ -1,16 +1,16 @@
-import HomeCss from "../../../assets/css/homeCss/home.module.css";
+import HomeCss from "../../../../assets/css/homeCss/home.module.css";
 
-import ContentBox from "../../Content-box";
-import VideoCss from "../../../assets/css/VideoCss/VideoCss.module.css";
-import AnimationCss from "../../../assets/css/overallCss/animations.module.css";
+import ContentBox from "../../../Content-box";
+import VideoCss from "../../../../assets/css/VideoCss/VideoCss.module.css";
+import AnimationCss from "../../../../assets/css/overallCss/animations.module.css";
 import { BsArrowRight } from "react-icons/bs";
 
-function PhotoNewsList(props) {
+function PhotoClubsList(props) {
   return (
     <>
-      <div className={VideoCss.category_title}>News Photos</div>
+      <div className={VideoCss.category_title}>Clubs Photos</div>
       <div className={`${HomeCss.content} ${VideoCss.film_container}`}>
-        {props.NewsLinks.map((value) => (
+        {props.ClubsLinks.map((value) => (
           <ContentBox
             title={value.title}
             name={"By " + value.Name}
@@ -50,4 +50,4 @@ function PhotoNewsList(props) {
   );
 }
 
-export default PhotoNewsList;
+export default PhotoClubsList;

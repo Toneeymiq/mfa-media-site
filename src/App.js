@@ -13,19 +13,23 @@ import "./App.css";
 import "./index.css";
 import{ FilmPage } from "./components/content/categories/video-page/Film";
 import { VideoArtsPage } from "./components/content/categories/video-page/VideoArtsPage";
-import { PhotoArtsPage } from "./components/content/categories/photos-page/PhotoArtsPage";
 import Search from "./components/navbar/Search";
-// import { PhotosClubsPage } from "./components/content/categories/photos-page/PhotosClubsPage";
 import Admin from "./databaseAdmin/Admin";
 import AddArtsPhoto from "./databaseAdmin/addPhoto/AddArtsPhoto";
 import AddClubsPhoto from "./databaseAdmin/addPhoto/AddClubsPhoto";
-import { PhotoNewsPage } from "./components/content/categories/photos-page/PhotosNewsPage";
 import AddNewsPhoto from "./databaseAdmin/addPhoto/AddNewsPhoto";
-import { PhotoSportsPage } from "./components/content/categories/photos-page/PhotosSportsPage";
 import AddSportsPhoto from "./databaseAdmin/addPhoto/AddSportsPhoto";
-import { PhotosClubsPage } from "./components/content/categories/photos-page/PhotosClubsPage";
 import AddEducationPhoto from "./databaseAdmin/addPhoto/AddEducationPhoto";
-import { PhotosEducationPage } from "./components/content/categories/photos-page/PhotoEducationPage";
+import AddNaturePhoto from "./databaseAdmin/addPhoto/AddNaturePhoto";
+
+// Photo
+import { PhotoNewsPage } from "./components/content/categories/photos-page/News-and-Events/PhotosNewsPage";
+import { PhotosEducationPage } from "./components/content/categories/photos-page/Education/PhotoEducationPage";
+import { PhotoArtsPage } from "./components/content/categories/photos-page/Arts/PhotoArtsPage";
+import { PhotoSportsPage } from "./components/content/categories/photos-page/Sports/PhotosSportsPage";
+import { PhotosClubsPage } from "./components/content/categories/photos-page/Clubs-and-societies/PhotosClubsPage";
+import { PhotosNaturePage } from "./components/content/categories/photos-page/Nature/PhotosNaturePage";
+
 
 // Videos
 import AddArtsVideo from "./databaseAdmin/addVideo/AddArtsVideo";
@@ -56,6 +60,9 @@ import { BlogClubsPage } from "./components/content/categories/blog-page/BlogClu
 import { BlogSportsPage } from "./components/content/categories/blog-page/BlogSportsPage";
 import { BlogInnovationPage } from "./components/content/categories/blog-page/BlogInnovationPage";
 
+
+
+
 function App() {
 
   return (
@@ -83,6 +90,7 @@ function App() {
         <Route path="/mfa-media-site/admin/photos/sports" element={<AddSportsPhoto />} />
         <Route path="/mfa-media-site/admin/photos/education" element={<AddEducationPhoto />} />
         <Route path="/mfa-media-site/admin/photos/clubs&societies" element={<AddClubsPhoto />} />
+        <Route path="/mfa-media-site/admin/photos/nature" element={<AddNaturePhoto />} />
 
         {/* Adding Blog */}
         <Route path="/mfa-media-site/admin/blog/arts" element={<AddArtsBlog />} />
@@ -107,12 +115,14 @@ function App() {
         <Route path="/video/mini-documentaries" element={<DocumentariesPage />} />
         <Route path="/video/news&events" element={<VideoNewsPage />} />
         <Route path="/video/clubs&societies" element={<VideoCLubsPage />} />
+        
         {/* Photo Pages */}
         <Route path="/photos/arts" element={<PhotoArtsPage />} />
         <Route path="/photos/news" element={<PhotoNewsPage />} />
         <Route path="/photos/sports" element={<PhotoSportsPage />} />
         <Route path="/photos/education" element={<PhotosEducationPage />} />
         <Route path="/photos/clubs&societies" element={<PhotosClubsPage />} />
+        <Route path="/photos/nature" element={<PhotosNaturePage />} />
         <Route path="/search" element={<Search />} />
         <Route path="*" element={<Error />} />
 

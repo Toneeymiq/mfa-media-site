@@ -4,7 +4,7 @@ import ContentBox from "../content/Content-box";
 import SearchBarCss from "../assets/css/navbarCss/searchBarCss.module.css";
 import HomeCss from "../assets/css/homeCss/home.module.css";
 import AnimationCss from "../assets/css/overallCss/animations.module.css";
-import { BsPlayBtn } from "react-icons/bs";
+import { BsArrowRight, BsPlayBtn } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 import VideoCss from "../assets/css/VideoCss/VideoCss.module.css";
 import { useEffect } from "react";
@@ -30,7 +30,7 @@ function Search() {
   };
 
   const [isLoading, setisLoading] = useState(true);
-     
+
   // Documentary Search
   const [loadedDocumentaries, setloadedMeetups] = useState([]);
 
@@ -199,43 +199,42 @@ function Search() {
       });
   }, []);
 
+  // videoArtsSearch
+  const [loadedArtsVideo, setloadedArtsVideo] = useState([]);
 
-   // videoArtsSearch
-   const [loadedArtsVideo, setloadedArtsVideo] = useState([]);
+  useEffect(() => {
+    setisLoading(true);
+    fetch([
+      "https://mfa-media-site-database-default-rtdb.firebaseio.com/videoArtsLinks.json",
+    ])
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        const itemValue = [];
 
-   useEffect(() => {
-     setisLoading(true);
-     fetch(
-       ["https://mfa-media-site-database-default-rtdb.firebaseio.com/videoArtsLinks.json",]
-     )
-       .then((response) => {
-         return response.json();
-       })
-       .then((data) => {
-         const itemValue = [];
- 
-         for (const key in data) {
-           const item = {
-             id: key,
-             ...data[key],
-           };
- 
-           itemValue.push(item);
-         }
- 
-         setisLoading(false);
-         setloadedArtsVideo(itemValue);
-       });
-   }, []);
+        for (const key in data) {
+          const item = {
+            id: key,
+            ...data[key],
+          };
 
-    // AdvertSearch
+          itemValue.push(item);
+        }
+
+        setisLoading(false);
+        setloadedArtsVideo(itemValue);
+      });
+  }, []);
+
+  // AdvertSearch
   const [loadedAdvertVideo, setloadedAdvertVideo] = useState([]);
 
   useEffect(() => {
     setisLoading(true);
-    fetch(
-      ["https://mfa-media-site-database-default-rtdb.firebaseio.com/videoAdvertLinks.json",]
-    )
+    fetch([
+      "https://mfa-media-site-database-default-rtdb.firebaseio.com/videoAdvertLinks.json",
+    ])
       .then((response) => {
         return response.json();
       })
@@ -256,117 +255,117 @@ function Search() {
       });
   }, []);
 
-    // ArtsPhoto Search
-    const [loadedArtsPhoto, setloadedArtsPhoto] = useState([]);
+  // ArtsPhoto Search
+  const [loadedArtsPhoto, setloadedArtsPhoto] = useState([]);
 
-    useEffect(() => {
-      setisLoading(true);
-      fetch([
-        "https://mfa-media-site-database-default-rtdb.firebaseio.com/photoArtsLinks.json",
-      ])
-        .then((response) => {
-          return response.json();
-        })
-        .then((data) => {
-          const itemValue = [];
-  
-          for (const key in data) {
-            const item = {
-              id: key,
-              ...data[key],
-            };
-  
-            itemValue.push(item);
-          }
-  
-          setisLoading(false);
-          setloadedArtsPhoto(itemValue);
-        });
-    }, []);
+  useEffect(() => {
+    setisLoading(true);
+    fetch([
+      "https://mfa-media-site-database-default-rtdb.firebaseio.com/photoArtsLinks.json",
+    ])
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        const itemValue = [];
 
-      // Clubs&Societies Search
-      const [loadedClubsPhoto, setloadedClubsPhoto] = useState([]);
+        for (const key in data) {
+          const item = {
+            id: key,
+            ...data[key],
+          };
 
-      useEffect(() => {
-        setisLoading(true);
-        fetch([
-          "https://mfa-media-site-database-default-rtdb.firebaseio.com/photoClubsLinks.json",
-        ])
-          .then((response) => {
-            return response.json();
-          })
-          .then((data) => {
-            const itemValue = [];
-    
-            for (const key in data) {
-              const item = {
-                id: key,
-                ...data[key],
-              };
-    
-              itemValue.push(item);
-            }
-    
-            setisLoading(false);
-            setloadedClubsPhoto(itemValue);
-          });
-      }, []);
+          itemValue.push(item);
+        }
 
-        // SportsPhoto Search
-    const [loadedSportsPhoto, setloadedSportsPhoto] = useState([]);
+        setisLoading(false);
+        setloadedArtsPhoto(itemValue);
+      });
+  }, []);
 
-    useEffect(() => {
-      setisLoading(true);
-      fetch([
-        "https://mfa-media-site-database-default-rtdb.firebaseio.com/photoSportsLinks.json",
-      ])
-        .then((response) => {
-          return response.json();
-        })
-        .then((data) => {
-          const itemValue = [];
-  
-          for (const key in data) {
-            const item = {
-              id: key,
-              ...data[key],
-            };
-  
-            itemValue.push(item);
-          }
-  
-          setisLoading(false);
-          setloadedSportsPhoto(itemValue);
-        });
-    }, []);
+  // Clubs&Societies Search
+  const [loadedClubsPhoto, setloadedClubsPhoto] = useState([]);
 
-      // EducationPhoto Search
-      const [loadedEducationPhoto, setloadedEducationPhoto] = useState([]);
+  useEffect(() => {
+    setisLoading(true);
+    fetch([
+      "https://mfa-media-site-database-default-rtdb.firebaseio.com/photoClubsLinks.json",
+    ])
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        const itemValue = [];
 
-      useEffect(() => {
-        setisLoading(true);
-        fetch([
-          "https://mfa-media-site-database-default-rtdb.firebaseio.com/photoEducationLinks.json",
-        ])
-          .then((response) => {
-            return response.json();
-          })
-          .then((data) => {
-            const itemValue = [];
-    
-            for (const key in data) {
-              const item = {
-                id: key,
-                ...data[key],
-              };
-    
-              itemValue.push(item);
-            }
-    
-            setisLoading(false);
-            setloadedEducationPhoto(itemValue);
-          });
-      }, []);
+        for (const key in data) {
+          const item = {
+            id: key,
+            ...data[key],
+          };
+
+          itemValue.push(item);
+        }
+
+        setisLoading(false);
+        setloadedClubsPhoto(itemValue);
+      });
+  }, []);
+
+  // SportsPhoto Search
+  const [loadedSportsPhoto, setloadedSportsPhoto] = useState([]);
+
+  useEffect(() => {
+    setisLoading(true);
+    fetch([
+      "https://mfa-media-site-database-default-rtdb.firebaseio.com/photoSportsLinks.json",
+    ])
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        const itemValue = [];
+
+        for (const key in data) {
+          const item = {
+            id: key,
+            ...data[key],
+          };
+
+          itemValue.push(item);
+        }
+
+        setisLoading(false);
+        setloadedSportsPhoto(itemValue);
+      });
+  }, []);
+
+  // EducationPhoto Search
+  const [loadedEducationPhoto, setloadedEducationPhoto] = useState([]);
+
+  useEffect(() => {
+    setisLoading(true);
+    fetch([
+      "https://mfa-media-site-database-default-rtdb.firebaseio.com/photoEducationLinks.json",
+    ])
+      .then((response) => {
+        return response.json();
+      })
+      .then((data) => {
+        const itemValue = [];
+
+        for (const key in data) {
+          const item = {
+            id: key,
+            ...data[key],
+          };
+
+          itemValue.push(item);
+        }
+
+        setisLoading(false);
+        setloadedEducationPhoto(itemValue);
+      });
+  }, []);
 
   if (isLoading) {
     return (
@@ -376,7 +375,7 @@ function Search() {
     );
   }
 
-  const Searching = [
+  const videoSearching = [
     ...loadedDocumentaries,
     ...loadedFilm,
     ...loadedMusicVideo,
@@ -386,14 +385,24 @@ function Search() {
     ...loadedArtsVideo,
     ...loadedAdvertVideo,
 
+  ];
+  
+  const photoSearching = [
     // Photos Search
     ...loadedArtsPhoto,
     ...loadedClubsPhoto,
     ...loadedSportsPhoto,
-    ...loadedEducationPhoto
-  ];
-
-  let videoDataSearch = Searching.filter((items) => {
+    ...loadedEducationPhoto,
+  ]
+  let videoDataSearch = videoSearching.filter((items) => {
+    return Object.keys(items).some((key) =>
+      items[key]
+        .toString()
+        .toLowerCase()
+        .includes(filter.toString().toLocaleLowerCase())
+    );
+  });
+  let photoDataSearch = photoSearching.filter((items) => {
     return Object.keys(items).some((key) =>
       items[key]
         .toString()
@@ -450,6 +459,7 @@ function Search() {
                       }
                       image={
                         <div className={HomeCss.video_div}>
+                          
                           <div className={HomeCss.play_button}>
                             <BsPlayBtn color="red" size={22} />
                           </div>
@@ -460,7 +470,73 @@ function Search() {
                         <div
                           className={`${VideoCss.iframe_container} ${AnimationCss.tracking_in_expand}`}
                         >
-                          {value.link}
+                          <iframe
+                            width="560"
+                            height="315"
+                            src={value.link}
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen="allowfullscreen"
+                          ></iframe>
+                        </div>
+                      }
+                    ></ContentBox>
+                  </div>
+                </>
+              );
+            })}
+            {photoDataSearch.map((value, index) => {
+              return (
+                <>
+                  <div
+                    className={`${HomeCss.content} ${SearchBarCss.search_content} ${VideoCss.film_container}`}
+                  >
+                    <ContentBox
+                      className={HomeCss.search_contentbox}
+                      title={
+                        <a href={value.link} target="_blank" rel="noreferrer">
+                          {value.title}
+                        </a>
+                      }
+                      description={
+                        <a href={value.link} target="_blank" rel="noreferrer">
+                          <p>{value.Description}</p>
+                        </a>
+                      }
+                      image={
+                        <div className={HomeCss.video_div}>
+                          <img src={value.image} alt="" />
+                        </div>
+                      }
+                      link={
+                        <div
+                          className={`${VideoCss.photo_container} ${AnimationCss.tracking_in_expand}`}
+                        >
+                          {<img src={value.image} alt={value.title} />}
+                          <div className={VideoCss.Clickedimage_description}>
+                            <div className={VideoCss.clickedimage_title}>
+                              <p>{value.title}</p>
+
+                              <div className={VideoCss.external_link}>
+                                {" "}
+                                <h3>{value.Name}</h3>{" "}
+                                <a
+                                  href={value.link}
+                                  target="_blank"
+                                  rel="noreferrer"
+                                >
+                                  {" "}
+                                  <h2>
+                                    Visit Site
+                                    <BsArrowRight
+                                      className={VideoCss.arrow}
+                                    />{" "}
+                                  </h2>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       }
                     ></ContentBox>

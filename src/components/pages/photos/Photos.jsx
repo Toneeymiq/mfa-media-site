@@ -1,7 +1,8 @@
 import PhotosCss from "../../assets/css/photographyCss/photographyCss.module.css";
-import { PhotoArtsPage } from "../../content/categories/photos-page/PhotoArtsPage";
-import { PhotosClubsPage } from "../../content/categories/photos-page/PhotosClubsPage";
-import { PhotoSportsPage } from "../../content/categories/photos-page/PhotosSportsPage";
+import { PhotoArtsPage } from "../../content/categories/photos-page/Arts/PhotoArtsPage";
+import { PhotosClubsPage } from "../../content/categories/photos-page/Clubs-and-societies/PhotosClubsPage";
+import { PhotosNaturePage } from "../../content/categories/photos-page/Nature/PhotosNaturePage";
+import { PhotoSportsPage } from "../../content/categories/photos-page/Sports/PhotosSportsPage";
 
 function Photos() {
   return (
@@ -9,6 +10,7 @@ function Photos() {
       <PhotoArtsPage />
       <PhotosClubsPage />
       <PhotoSportsPage />
+      <PhotosNaturePage />
     </div>
   );
 }

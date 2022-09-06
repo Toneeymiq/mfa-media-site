@@ -10,8 +10,11 @@
 .card {
   overflow: hidden;
   color: rgb(0, 0, 0);
-  cursor: pointer;
+  cursor: grab;
   /* animation: slide 10s linear infinite; */
+}
+.card::after {
+  cursor: grabbing;
 }
 
 .card p {

@@ -7,7 +7,6 @@ import "aos/dist/aos.css";
 
 AOS.init();
 
-
 export const settings = {
   speed: 500,
   slidesToShow: 6,
@@ -39,7 +38,7 @@ export const settings = {
         infinite: true,
       },
     },
-      {
+    {
       breakpoint: 375,
       settings: {
         slidesToShow: 2,
@@ -59,8 +58,11 @@ function SliderSettings(props) {
           <Slider {...settings}>
             {props.mapping.map((item) => {
               return (
-                <div  data-aos="fade-up"
-                data-aos-anchor-placement="bottom-bottom"  className={SliderCss.card}>
+                <div
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="bottom-bottom"
+                  className={SliderCss.card} 
+                >
                   <div className={SliderCss.card_top}>
                     <a href={item.path}>
                       <img src={item.image} alt={item.title} />
@@ -72,7 +74,10 @@ function SliderSettings(props) {
             })}
           </Slider>
           <Link to={props.path}>
-            <div className={SliderCss.see_more}> <p>See more {props.category}</p> </div>
+            <div className={SliderCss.see_more}>
+              {" "}
+              <p>See more {props.category}</p>{" "}
+            </div>
           </Link>
         </div>
       </div>
