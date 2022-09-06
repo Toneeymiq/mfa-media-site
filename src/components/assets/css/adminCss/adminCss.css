@@ -37,6 +37,7 @@
 #add_sports_photo:checked ~ .clicked_link,
 #add_educational_photo:checked ~ .clicked_link,
 #add_clubs_photo:checked ~ .clicked_link,
+#add_nature_photo:checked ~ .clicked_link,
 
 /* Adding Blog Checkbox */
 #add_arts_blog:checked ~ .clicked_link,
