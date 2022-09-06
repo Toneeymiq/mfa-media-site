@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { RiCloseLine, RiSearch2Line } from "react-icons/ri";
+import { RiCloseLine, RiExternalLinkLine, RiSearch2Line } from "react-icons/ri";
 import ContentBox from "../content/Content-box";
 import SearchBarCss from "../assets/css/navbarCss/searchBarCss.module.css";
 import HomeCss from "../assets/css/homeCss/home.module.css";
@@ -384,16 +384,15 @@ function Search() {
     ...loadedEducationVideo,
     ...loadedArtsVideo,
     ...loadedAdvertVideo,
-
   ];
-  
+
   const photoSearching = [
     // Photos Search
     ...loadedArtsPhoto,
     ...loadedClubsPhoto,
     ...loadedSportsPhoto,
     ...loadedEducationPhoto,
-  ]
+  ];
   let videoDataSearch = videoSearching.filter((items) => {
     return Object.keys(items).some((key) =>
       items[key]
@@ -449,17 +448,11 @@ function Search() {
                       className={HomeCss.search_contentbox}
                       title={
                         <a href={value.link} target="_blank" rel="noreferrer">
-                          {value.title}
-                        </a>
-                      }
-                      description={
-                        <a href={value.link} target="_blank" rel="noreferrer">
-                          <p>{value.Description}</p>
+                          {value.title} by {value.Name}<RiExternalLinkLine  />
                         </a>
                       }
                       image={
                         <div className={HomeCss.video_div}>
-                          
                           <div className={HomeCss.play_button}>
                             <BsPlayBtn color="red" size={22} />
                           </div>
@@ -496,12 +489,7 @@ function Search() {
                       className={HomeCss.search_contentbox}
                       title={
                         <a href={value.link} target="_blank" rel="noreferrer">
-                          {value.title}
-                        </a>
-                      }
-                      description={
-                        <a href={value.link} target="_blank" rel="noreferrer">
-                          <p>{value.Description}</p>
+                          {value.title} by {value.Name}<RiExternalLinkLine  />
                         </a>
                       }
                       image={
@@ -517,7 +505,6 @@ function Search() {
                           <div className={VideoCss.Clickedimage_description}>
                             <div className={VideoCss.clickedimage_title}>
                               <p>{value.title}</p>
-
                               <div className={VideoCss.external_link}>
                                 {" "}
                                 <h3>{value.Name}</h3>{" "}
@@ -529,7 +516,8 @@ function Search() {
                                   {" "}
                                   <h2>
                                     Visit Site
-                                    <BsArrowRight
+                                    <RiExternalLinkLine
+                                      size={25}
                                       className={VideoCss.arrow}
                                     />{" "}
                                   </h2>
