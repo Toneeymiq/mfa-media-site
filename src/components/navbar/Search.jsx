@@ -300,7 +300,7 @@ function Search() {
         for (const key in data) {
           const item = {
             id: key,
-            ...data[key],
+            ...data[key], 
           };
 
           itemValue.push(item);

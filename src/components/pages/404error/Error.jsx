@@ -1,9 +1,10 @@
 import ErrorCss from '../../assets/css/errorCss/errorCss.module.css'
+import ErrorImg from '../../assets/images/error-page.jpeg'
 
 function Error() {
   return (
     <div className={ErrorCss.error_container}>
-        <p>404 error. Page not found</p>
+      <img src={ErrorImg} alt="" srcset="" />
     </div>
   )
 }
