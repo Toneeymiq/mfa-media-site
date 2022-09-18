@@ -58,7 +58,7 @@ function Homeimg() {
       <div className={HomeImgCss.container}>
         <div data-aos="fade-up"
                 data-aos-anchor-placement="bottom-bottom"  className={HomeImgCss.welcome_message}>
-          <h1  className={AnimationCss.fade_in}>Welcome to MFA Media Site</h1>
+          <h1  className={AnimationCss.fade_in}>Welcome to TDL TV</h1>
           <p className={AnimationCss.tracking_in_expand}>
             We are a branding and experienced highschool Production company
           </p>

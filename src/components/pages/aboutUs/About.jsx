@@ -5,9 +5,9 @@ function About() {
   return (
     <div className={AboutCss.about_container}>
       <div className={AboutCss.about_content}>
-        <h1>MFA Media</h1>
+        <h1>TDL TV</h1>
         <p>
-          MFA Media is an online media platform featuring top Media projects and
+          TDL TV is an online media platform featuring top Media projects and
           content that has been created by us, students of
           <a href="https://new.mpesafoundationacademy.ac.ke" target="_blank" rel="noreferrer">
             Mpesa Foundation Academy
