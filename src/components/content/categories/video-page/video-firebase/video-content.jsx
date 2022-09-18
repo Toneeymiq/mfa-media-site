@@ -1,17 +1,17 @@
 import React from "react";
-import HomeCss from "../../../assets/css/homeCss/home.module.css";
+import HomeCss from "../../../../assets/css/homeCss/home.module.css";
 
 import { BsPlayBtn } from "react-icons/bs";
-import ContentBox from "../../Content-box";
-import VideoCss from "../../../assets/css/VideoCss/VideoCss.module.css";
-import AnimationCss from "../../../assets/css/overallCss/animations.module.css";
+import ContentBox from "../../../Content-box";
+import VideoCss from "../../../../assets/css/VideoCss/VideoCss.module.css";
+import AnimationCss from "../../../../assets/css/overallCss/animations.module.css";
 
-function VideoArtsList(props) {
+function VideoContent(props) {
   return (
     <>
-      <div className={VideoCss.category_title}>Arts & lifestyle Videos</div>
+      <div className={VideoCss.category_title}></div>
       <div className={`${HomeCss.content} ${VideoCss.film_container}`}>
-        {props.VideoArtsLinks.map((value) => (
+        {props.VideosContent.map((value) => (
           <ContentBox
             title={value.title}
             name={"By " + value.Name}
@@ -45,4 +45,4 @@ function VideoArtsList(props) {
   );
 }
 
-export default VideoArtsList;
+export default VideoContent;

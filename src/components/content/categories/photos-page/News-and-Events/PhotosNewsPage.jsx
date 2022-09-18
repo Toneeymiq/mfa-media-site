@@ -1,65 +1,11 @@
 import SliderSettings from "../../SliderSettings";
 import { useState, useEffect } from "react";
-import PhotoNewsList from "./PhotosNewsList";
 
 import { ColorRing } from "react-loader-spinner";
 import "react-loader-spinner";
 
-export function PhotoNewsPage() {
-  const [isLoading, setisLoading] = useState(true);
-  const [loadedMeetups, setloadedMeetups] = useState([]);
 
-  useEffect(() => {
-    setisLoading(true);
-    fetch(
-      "https://mfa-media-site-database-default-rtdb.firebaseio.com/photoNewsLinks.json"
-    )
-      .then((response) => {
-        return response.json();
-      })
-      .then((data) => {
-        const itemValue = [];
-
-        for (const key in data) {
-          const item = {
-            id: key,
-            ...data[key],
-          };
-
-          itemValue.push(item);
-        }
-
-        setisLoading(false);
-        setloadedMeetups(itemValue);
-      });
-  }, []);
-
-  if (isLoading) {
-    return (
-      <section>
-        <ColorRing
-          visible={true}
-          height="80"
-          width="80"
-          ariaLabel="blocks-loading"
-          wrapperStyle={{}}
-          wrapperClass="blocks-wrapper"
-          colors={[
-            "deepskyblue",
-            "deepskyblue",
-            "blue",
-            "deepskyblue",
-            "#849b87",
-          ]}
-        />
-      </section>
-    );
-  }
-
-  return <PhotoNewsList NewsLinks={loadedMeetups} />;
-}
-
-export function PhotoArtsSlider() {
+export function PhotoNewsSlider() {
   const [isLoading, setisLoading] = useState(true);
   const [loadedMeetups, setloadedMeetups] = useState([]);
 

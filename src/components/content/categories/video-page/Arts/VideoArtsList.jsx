@@ -1,35 +1,36 @@
+import SliderSettings from "../../SliderSettings";
 import { useState, useEffect } from "react";
-import BlogArtsContent from "./BlogArtsContent";
 
 import { ColorRing } from "react-loader-spinner";
 import "react-loader-spinner";
 
-export function BlogArtsPage(props) {
+
+export function VideoArtsSlider() {
   const [isLoading, setisLoading] = useState(true);
   const [loadedMeetups, setloadedMeetups] = useState([]);
 
   useEffect(() => {
     setisLoading(true);
     fetch(
-      "https://mfa-media-site-database-default-rtdb.firebaseio.com/blogArtsLinks.json"
+      "https://mfa-media-site-database-default-rtdb.firebaseio.com/video/videoArtsLinks.json"
     )
       .then((response) => {
         return response.json();
       })
       .then((data) => {
-        const itemValue = [];
+        const meetups = [];
 
         for (const key in data) {
-          const item = {
+          const meetup = {
             id: key,
             ...data[key],
           };
 
-          itemValue.push(item);
+          meetups.push(meetup);
         }
 
         setisLoading(false);
-        setloadedMeetups(itemValue);
+        setloadedMeetups(meetups);
       });
   }, []);
 
@@ -43,16 +44,25 @@ export function BlogArtsPage(props) {
           ariaLabel="blocks-loading"
           wrapperStyle={{}}
           wrapperClass="blocks-wrapper"
-          colors={["#e15b64", "#f47e60", "#f8b26a", "#abbd81", "#849b87"]}
+          colors={[
+            "deepskyblue",
+            "deepskyblue",
+            "blue",
+            "deepskyblue",
+            "#849b87",
+          ]}
         />
       </section>
     );
   }
 
   return (
-    <BlogArtsContent
-      BlogsContent={loadedMeetups}
-      path={"blog/arts/" + props.title}
-    />
+    <>
+      <SliderSettings
+        mapping={loadedMeetups}
+        category="Art and Lifestyle"
+        path="/video/arts&lifestyle"
+      />
+    </>
   );
 }

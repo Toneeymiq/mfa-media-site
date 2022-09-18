@@ -4,7 +4,7 @@ function AddNaturePhoto() {
   return (
     <NewContent
       firebaseLink="https://mfa-media-site-database-default-rtdb.firebaseio.com/photoNatureLinks.json"
-      category="Education Photo"
+      category="Nature Photo"
     />
   );
 }

@@ -4,7 +4,7 @@ import ContentBox from "../content/Content-box";
 import SearchBarCss from "../assets/css/navbarCss/searchBarCss.module.css";
 import HomeCss from "../assets/css/homeCss/home.module.css";
 import AnimationCss from "../assets/css/overallCss/animations.module.css";
-import { BsArrowRight, BsPlayBtn } from "react-icons/bs";
+import { BsPlayBtn } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 import VideoCss from "../assets/css/VideoCss/VideoCss.module.css";
 import { useEffect } from "react";

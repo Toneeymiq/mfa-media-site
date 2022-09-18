@@ -40,11 +40,11 @@ function ContentBox(props) {
 
         {toggleVideo && (
           <>
-            <VideoModal  onClick={() => setToggleVideo(false)} />
             <div 
               className={HomeCss.clicked_video}
-              onClick={() => setToggleVideo(false)}
+              // onClick={() => setToggleVideo(false)}
             >
+            <VideoModal  onClick={() => setToggleVideo(false)} />
               {props.link}
               {props.imageLink}
               <div

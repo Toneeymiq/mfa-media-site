@@ -1,16 +1,18 @@
 import PhotosCss from "../../assets/css/photographyCss/photographyCss.module.css";
-import { PhotoArtsPage } from "../../content/categories/photos-page/Arts/PhotoArtsPage";
-import { PhotosClubsPage } from "../../content/categories/photos-page/Clubs-and-societies/PhotosClubsPage";
-import { PhotosNaturePage } from "../../content/categories/photos-page/Nature/PhotosNaturePage";
-import { PhotoSportsPage } from "../../content/categories/photos-page/Sports/PhotosSportsPage";
+import { PhotoArtPage } from "../../content/categories/photos-page/Arts/PhotoArtsList";
+import { PhotoClubsPage } from "../../content/categories/photos-page/Clubs-and-societies/PhotosClubsList";
+import { PhotoEducationPage } from "../../content/categories/photos-page/Education/PhotoEducationList";
+import { PhotoNaturePage } from "../../content/categories/photos-page/Nature/PhotoNatureList";
+import { PhotoSportsPage } from "../../content/categories/photos-page/Sports/PhotosSportsList";
 
 function Photos() {
   return (
     <div className={PhotosCss.photography_container}>
-      <PhotoArtsPage />
-      <PhotosClubsPage />
+      <PhotoArtPage />
+      <PhotoClubsPage />
+      <PhotoEducationPage />
       <PhotoSportsPage />
-      <PhotosNaturePage />
+      <PhotoNaturePage />
     </div>
   );
 }

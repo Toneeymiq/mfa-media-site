@@ -21,8 +21,8 @@ function SideBar(props) {
             <Link to="video/clubs&societies">
               <p onClick={props.onClick}>👩‍👩‍👦 Clubs & Societies</p>
             </Link>
-            <Link to="video/arts">
-              <p onClick={props.onClick}>🎨 Arts</p>
+            <Link to="video/arts&lifestyle">
+              <p onClick={props.onClick}>🎨 Arts & Lifestyle</p>
             </Link>
             <Link to="video/educational">
               <p onClick={props.onClick}>🎓 Educational</p>
@@ -36,6 +36,9 @@ function SideBar(props) {
             </Link>
             <Link to="video/music">
               <p onClick={props.onClick}>🎧 Music Videos</p>
+            </Link>
+            <Link to="video/sports">
+              <p onClick={props.onClick}>⚽️ Sports</p>
             </Link>
       
             <Link to="video/film">
@@ -57,7 +60,7 @@ function SideBar(props) {
             <Link to="photos/sports">
               <p onClick={props.onClick}>⚽ Sports</p>
             </Link>
-            <Link to="photos/education">
+            <Link to="photos/educational">
               <p onClick={props.onClick}>🎓 Educational</p>
             </Link>
             <Link to="photos/nature">
@@ -74,13 +77,13 @@ function SideBar(props) {
             <Link to="blog/arts">
               <p onClick={props.onClick}>🖼 Arts & Lifestyle</p>
             </Link>
-            <Link to="pblog/clubs&societies">
+            <Link to="blog/clubs&societies">
               <p onClick={props.onClick}>👨‍👧‍👧 Clubs & Societies</p>
             </Link>
             <Link to="blog/sports">
               <p onClick={props.onClick}>⚽ Sports</p>
             </Link>
-            <Link to="blog/education">
+            <Link to="blog/educational">
               <p onClick={props.onClick}>🎓 Educational</p>
             </Link>
             <Link to="blog/innovation">

@@ -1,4 +1,4 @@
-import { MusicSlider } from "../../content/categories/video-page/Music";
+import { MusicSlider } from "../../content/categories/video-page/Music/MusicList";
 import Photos from "../photos/Photos";
 import VideoContent from "../video/Video";
 import Homeimg from "./Homeimg";

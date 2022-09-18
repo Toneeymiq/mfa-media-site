@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { MdArrowBack } from "react-icons/md";
 import { Link } from "react-router-dom";
 
-function NewContent(props) {
+function NewContent(props) { 
   function NewContentForm() {
     const titleInputRef = useRef();
     const imageInputRef = useRef();

@@ -53,9 +53,20 @@ button.slick-prev::before {
   z-index: 1;
 }
 
+@keyframes bounce {
+  from{
+    font-size: 25px;
+  }
+  to{ 
+    font-size: 30px;
+  }
+}
+
 button.slick-arrow::before {
   color: deepskyblue;
   font-size: 25px;
+  animation: .5s bounce infinite; 
+  animation-delay: 1s;
 }
 
 

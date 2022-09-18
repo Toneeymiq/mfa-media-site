@@ -1,63 +1,9 @@
-import SliderSettings from "../SliderSettings";
+import SliderSettings from "../../SliderSettings";
 import { useState, useEffect } from "react";
-import VideoClubsList from "./VideoClubsList";
 
 import { ColorRing } from "react-loader-spinner";
 import "react-loader-spinner";
 
-export function VideoCLubsPage(props) {
-  const [isLoading, setisLoading] = useState(true);
-  const [loadedMeetups, setloadedMeetups] = useState([]);
-
-  useEffect(() => {
-    setisLoading(true);
-    fetch(
-      "https://mfa-media-site-database-default-rtdb.firebaseio.com/videoClubsLinks.json"
-    )
-      .then((response) => {
-        return response.json();
-      })
-      .then((data) => {
-        const itemValue = [];
-
-        for (const key in data) {
-          const item = {
-            id: key,
-            ...data[key],
-          };
-
-          itemValue.push(item);
-        }
-
-        setisLoading(false);
-        setloadedMeetups(itemValue);
-      });
-  }, []);
-
-  if (isLoading) {
-    return (
-      <section>
-        <ColorRing
-          visible={true}
-          height="80"
-          width="80"
-          ariaLabel="blocks-loading"
-          wrapperStyle={{}}
-          wrapperClass="blocks-wrapper"
-          colors={[
-            "deepskyblue",
-            "deepskyblue",
-            "blue",
-            "deepskyblue",
-            "#849b87",
-          ]}
-        />
-      </section>
-    );
-  }
-
-  return <VideoClubsList VideoClubsLinks={loadedMeetups} />;
-}
 
 export function VideoClubsSlider() {
   const [isLoading, setisLoading] = useState(true);
@@ -114,7 +60,7 @@ export function VideoClubsSlider() {
     <>
       <SliderSettings
         mapping={loadedMeetups}
-        category="Clubs & Societies Videos"
+        category="Clubs and Societies"
         path="/video/clubs&societies"
       />
     </>

@@ -1,10 +1,8 @@
-import VideoCss from "../../../assets/css/VideoCss/VideoCss.module.css";
 import BlogCss from "../../../assets/css/blogCss/BLogPage.module.css";
 
-function BlogNewsContent(props) {
+function BlogContent(props) {
   return (
     <>
-      <div className={VideoCss.category_title}>The Blog</div>
       {props.BlogsContent.map((value) => (
         <>
           <div className={BlogCss.blog_container}>
@@ -34,4 +32,5 @@ function BlogNewsContent(props) {
   );
 }
 
-export default BlogNewsContent;
+
+export default BlogContent;

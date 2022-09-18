@@ -1,54 +1,18 @@
-import SliderSettings from "../SliderSettings";
+import SliderSettings from "../../SliderSettings";
 import { useState, useEffect } from "react";
-import VideoNewsList from "./VideoNewsList";
 
 import { ColorRing } from "react-loader-spinner";
 import "react-loader-spinner";
 
-export function VideoNewsPage(props) {
+
+export function DocumentariesSlider() {
   const [isLoading, setisLoading] = useState(true);
   const [loadedMeetups, setloadedMeetups] = useState([]);
 
   useEffect(() => {
     setisLoading(true);
     fetch(
-      "https://mfa-media-site-database-default-rtdb.firebaseio.com/videoNewsLinks.json"
-    )
-      .then((response) => {
-        return response.json();
-      })
-      .then((data) => {
-        const itemValue = [];
-
-        for (const key in data) {
-          const item = {
-            id: key,
-            ...data[key],
-          };
-
-          itemValue.push(item);
-        }
-
-        setisLoading(false);
-        setloadedMeetups(itemValue);
-      });
-  }, []);
-
-  if (isLoading) {
-    return <section></section>;
-  }
-
-  return <VideoNewsList VideoNewsLinks={loadedMeetups} />;
-}
-
-export function VideoNewsSlider() {
-  const [isLoading, setisLoading] = useState(true);
-  const [loadedMeetups, setloadedMeetups] = useState([]);
-
-  useEffect(() => {
-    setisLoading(true);
-    fetch(
-      "https://mfa-media-site-database-default-rtdb.firebaseio.com/videoNewsLinks.json"
+      "https://mfa-media-site-database-default-rtdb.firebaseio.com/DocumentariesLinks.json"
     )
       .then((response) => {
         return response.json();
@@ -96,8 +60,8 @@ export function VideoNewsSlider() {
     <>
       <SliderSettings
         mapping={loadedMeetups}
-        category="News & Events  Videos"
-        path="/video/news&events"
+        category="Mini Documentaries"
+        path="/video/mini-documentaries"
       />
     </>
   );

@@ -33,7 +33,7 @@
 .Clickedimage_description {
   display: flex;
   align-items: center;
-  margin: .3rem 0;
+  margin: 0.3rem 0;
 }
 .external_link {
   font-size: 10px;
@@ -44,20 +44,21 @@
 
 .clickedimage_title {
   width: 100%;
-  padding: 0 .3rem;
+  padding: 0 0.3rem;
 }
 .clickedimage_title h2 {
-    padding: 0;
-    margin: 0;
-    color: rgb(120, 51, 51);
-    display: flex;
-    align-items: center;
+  padding: 0;
+  margin: 0;
+  color: rgb(120, 51, 51);
+  display: flex;
+  align-items: center;
 }
 .clickedimage_title h3 {
   color: deepskyblue;
+  cursor: pointer;
 }
 .clickedimage_title P {
-    color: rgb(37, 31, 23);
+  color: rgb(37, 31, 23);
 }
 
 .clickedimage_title p,
@@ -69,5 +70,95 @@
 }
 
 .arrow {
-    margin-left: .5rem;
+  margin-left: 0.5rem;
 }
+
+.userDiv {
+  background: rgb(0 0 0 / 75%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* overflow: scroll; */
+}
+
+.userContainer {
+  background: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 5%;
+  z-index: 1;
+  width: 50%;
+  height: 90%;
+  flex-wrap: wrap;
+  overflow: scroll;
+}
+.user_img {
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  padding: 1%;
+}
+
+.user_img img {
+  width: 80%;
+}
+
+.user_portfolio h2 {
+  /* width: 50%; */
+  color: wheat;
+  background: black;
+  padding: .4rem;
+  border-radius: 5px;
+}
+
+.user_description h1 {
+  margin: 0;
+  margin-left: 10px;
+  font-weight: bolder;
+  font-size: 40px;
+}
+
+.user_description p {
+  margin: 0.7rem 0.5rem;
+  padding: 0;
+  line-height: 1.3rem;
+  word-spacing: .3rem;
+}
+
+.close_user {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .userContainer {
+    width: unset;
+  }
+  .user_description {
+    width: unset;
+  }
+
+  .user_img img {
+    margin: 0.5rem;
+    display: flex;
+  }
+  .user_img {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  .user_description h1 {
+    margin-left: 5px;
+  }
+}
+

@@ -12,11 +12,10 @@
   .video_modal {
     width: 100%;
     height: 100%;
-    background:  rgb(0 0 0 / 75%);;
+    background:  rgb(0 0 0 / 75%);
     position: fixed;
     left: 0;
     top: 0;
-    z-index: 2;
   }
   
   
@@ -28,5 +27,15 @@
     left: 0;
     top: 0;
     z-index: 1;
+  }
+  
+  
+  .video_modal3 {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.027);
+    position: fixed;
+    left: 0;
+    top: 0;
   }
   
