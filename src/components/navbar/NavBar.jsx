@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/images/media-site-logo.png";
 import NavbarCss from "../assets/css//navbarCss/Navbar.module.css";
-import { RiCloseCircleFill, RiMenu2Line } from "react-icons/ri";
+import { RiCameraLensFill, RiCloseCircleFill, RiMenu2Line } from "react-icons/ri";
 
 import { useState } from "react";
 import Modal from "./Modal";
@@ -13,6 +13,7 @@ import AnimationCss from "../assets/css/overallCss/animations.module.css";
 import useLocalStorage from "use-local-storage";
 import { Search_icon } from "./Search";
 import SideBar from "./SideBar";
+import { MdLens } from "react-icons/md";
 
 function NavBar() {
 
@@ -73,9 +74,8 @@ function NavBar() {
           )}
           <div className={NavbarCss.logo}>
             <Link to={"/"}>
-              <a href="/">
-                <img src={logo} alt="logo" />
-              </a>
+                {/* <img src={logo} alt="logo" /> */}
+                <h1><RiCameraLensFill color="var(--text-color)" size={40}/>{" "} TDL TV</h1>
             </Link>
           </div>
 

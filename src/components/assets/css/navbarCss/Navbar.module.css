@@ -97,9 +97,17 @@ Animations .fade_in {
 
 .logo {
   margin: 0 0;
-  margin-top: 0.4rem;
+  /* margin-top: 0.4rem; */
   z-index: -11;
   width: 100%;
+}
+
+.logo h1 {
+  font-weight: 700;
+  color: rgb(255, 101, 101);
+  display: flex;
+  font-size: 40px;
+  align-items: center;
 }
 
 .logo img {
@@ -160,7 +168,6 @@ Animations .fade_in {
   font-size: 25px;
 }
 
-
 .nav_bar_hover_container {
   position: absolute;
   width: 22rem;
@@ -199,7 +206,6 @@ Animations .fade_in {
   color: var(--text-color);
 }
 
-
 .close_menu {
   display: flex;
   position: fixed;
@@ -217,7 +223,7 @@ Animations .fade_in {
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 0 .5rem;
+  padding: 0 0.5rem;
   z-index: 1;
 }
 
@@ -259,13 +265,11 @@ Animations .fade_in {
     font-style: unset;
     font-weight: unset;
   }
-
 }
 
 .content_title {
   color: red;
 }
-
 
 @media screen and (max-width: 700px) {
   .logo {
@@ -281,21 +285,18 @@ Animations .fade_in {
     display: none;
   }
 
-  
   .menu_about_links {
     display: block;
   }
-  
+
   .menu_about_links p {
     color: var(--text-color);
     background: transparent;
-    margin: 0 .5rem;
+    margin: 0 0.5rem;
   }
-
 }
 
 @media screen and (max-width: 425px) {
-
   .navbar_menu_container {
     width: 100%;
     right: 0;
@@ -328,7 +329,6 @@ Animations .fade_in {
     width: 90%;
   }
 }
-
 
 @media screen and (max-width: 319px) {
   .theme_container p1 {
