@@ -274,7 +274,7 @@ Animations .fade_in {
 @media screen and (max-width: 700px) {
   .logo {
     margin: 0;
-    margin-top: 0.4rem;
+    /* margin-top: 0.4rem; */
   }
 
   .about_links p {
@@ -327,6 +327,13 @@ Animations .fade_in {
   }
   .logo {
     width: 90%;
+  }
+
+  .logo h1 {
+    font-size: 30px;
+  }
+  .logo h1 svg {
+    width: 32px;
   }
 }
 
