@@ -54,7 +54,7 @@ export function PhotoFirebase(props) {
 
   return (
     <>
-      <PhotoContent PhotosContent={loadedContent}/>
+      <PhotoContent category={props.category} PhotosContent={loadedContent}/>
     </>
   );
 }

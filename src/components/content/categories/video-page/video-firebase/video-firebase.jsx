@@ -54,7 +54,7 @@ export function VideoFirebase(props) {
 
   return (
     <>
-      <VideoContent VideosContent={loadedContent}/>
+      <VideoContent category={props.category} VideosContent={loadedContent}/>
     </>
   );
 }

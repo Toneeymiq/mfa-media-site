@@ -14,7 +14,7 @@ function PhotoContent(props) {
   const [toggleUser, settoggleUser] = useState(false);
   return (
     <>
-      <div className={VideoCss.category_title}></div>
+      <div className={VideoCss.category_title}>{props.category}</div>
       <div className={`${HomeCss.content} ${VideoCss.film_container}`}>
         {props.PhotosContent.map((value) => (
           <ContentBox

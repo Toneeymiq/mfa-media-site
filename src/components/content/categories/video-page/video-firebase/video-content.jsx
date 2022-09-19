@@ -9,7 +9,7 @@ import AnimationCss from "../../../../assets/css/overallCss/animations.module.cs
 function VideoContent(props) {
   return (
     <>
-      <div className={VideoCss.category_title}></div>
+      <div className={VideoCss.category_title}>{props.category}</div>
       <div className={`${HomeCss.content} ${VideoCss.film_container}`}>
         {props.VideosContent.map((value) => (
           <ContentBox

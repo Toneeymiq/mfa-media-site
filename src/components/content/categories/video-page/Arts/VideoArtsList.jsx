@@ -12,7 +12,7 @@ export function VideoArtsSlider() {
   useEffect(() => {
     setisLoading(true);
     fetch(
-      "https://mfa-media-site-database-default-rtdb.firebaseio.com/video/videoArtsLinks.json"
+      "https://mfa-media-site-database-default-rtdb.firebaseio.com/videoArtsLinks.json"
     )
       .then((response) => {
         return response.json();
