@@ -1,15 +1,14 @@
 import SidebarCss from "../assets/css//navbarCss/sidebar.module.css";
 import { Link } from "react-router-dom";
-import {  BsImage } from 'react-icons/bs'
+import { BsImage } from "react-icons/bs";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 AOS.init();
 
-
 function SideBar(props) {
   return (
-    <div data-aos="zoom-out-up"   className={SidebarCss.sidebar_container}>
+    <div data-aos="zoom-out-up" className={SidebarCss.sidebar_container}>
       <div className={SidebarCss.sidebar_links}>
         <ul className={SidebarCss.links_container}>
           <div className={SidebarCss.sidebar_video_links}>
@@ -17,7 +16,7 @@ function SideBar(props) {
             <Link to="video/news&events">
               <p onClick={props.onClick}>📰 News/Events</p>
             </Link>
-         
+
             <Link to="video/clubs&societies">
               <p onClick={props.onClick}>👩‍👩‍👦 Clubs & Societies</p>
             </Link>
@@ -40,14 +39,16 @@ function SideBar(props) {
             <Link to="video/sports">
               <p onClick={props.onClick}>⚽️ Sports</p>
             </Link>
-      
+
             <Link to="video/film">
               <p onClick={props.onClick}>🎬 Short Films</p>
             </Link>
-           
           </div>
           <div className={SidebarCss.sidebar_photo_links}>
-            <h1> <BsImage /> Photos</h1>
+            <h1>
+              {" "}
+              <BsImage /> Photos
+            </h1>
             <Link to="photos/news">
               <p onClick={props.onClick}>📃 News/Events</p>
             </Link>
@@ -66,7 +67,6 @@ function SideBar(props) {
             <Link to="photos/nature">
               <p onClick={props.onClick}>🎓 Nature</p>
             </Link>
-    
           </div>
 
           <div className={SidebarCss.sidebar_photo_links}>
@@ -89,7 +89,11 @@ function SideBar(props) {
             <Link to="blog/innovation">
               <p onClick={props.onClick}>🧠 Innovation</p>
             </Link>
-    
+          </div>
+          <div className={SidebarCss.admin}>
+            <Link to="/mfa-media-site/admin">
+              <p>Admin Page</p>
+            </Link>
           </div>
         </ul>
       </div>

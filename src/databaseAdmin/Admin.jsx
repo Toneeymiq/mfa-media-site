@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import AdminCss from "../components/assets/css/adminCss/adminCss.module.css";
 import AdminLinks from "./AdminLinks";
 
@@ -118,7 +119,7 @@ function Admin(props) {
               categoryName="videoEducationLinks.json"
             />
           </ul>
-{/* photos */}
+          {/* photos */}
           <h4>
             Add Photo <hr />{" "}
           </h4>
@@ -285,6 +286,11 @@ function Admin(props) {
               categoryName="blogInnovationLinks.json"
             />
           </ul>
+          <div>
+            <Link to="/">
+              <p>Home</p>
+            </Link>
+          </div>
         </div>
       </div>
     </>

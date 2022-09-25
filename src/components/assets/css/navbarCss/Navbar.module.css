@@ -251,7 +251,7 @@ Animations .fade_in {
     color: var(--text-color);
   }
 
-  .nav_bar_links p:hover ~ .nav_bar_hover_container {
+  .nav_bar_links p:hover>.nav_bar_hover_container {
     opacity: 0;
     visibility: hidden;
   }

@@ -20,7 +20,7 @@ p {
 
 .slider_container {
   margin: 0 auto;
-  padding: .5rem .5rem;
+  padding: .5rem 0;
   margin-bottom: -20px;
 }
 
