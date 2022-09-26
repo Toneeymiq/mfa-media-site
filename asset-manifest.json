@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/mfa-media-site/static/css/main.78139ec2.css",
-    "main.js": "/mfa-media-site/static/js/main.1bf874b6.js",
-    "static/media/background.jpg": "/mfa-media-site/static/media/background.3324e1703ee18778d7c5.jpg",
-    "static/media/nikon2.jpg": "/mfa-media-site/static/media/nikon2.9499d036d3cb0a52d4e1.jpg",
-    "static/media/nikon.jpg": "/mfa-media-site/static/media/nikon.1859a815dc6793eb1e27.jpg",
-    "static/media/error-page.jpeg": "/mfa-media-site/static/media/error-page.b1993575246593e93d31.jpeg",
-    "static/media/media-site-logo.png": "/mfa-media-site/static/media/media-site-logo.76d794cba363efbb41ae.png",
-    "static/media/slick.svg": "/mfa-media-site/static/media/slick.2630a3e3eab21c607e21.svg",
-    "static/media/slick.eot": "/mfa-media-site/static/media/slick.a4e97f5a2a64f0ab1323.eot",
-    "static/media/slick.ttf": "/mfa-media-site/static/media/slick.c94f7671dcc99dce43e2.ttf",
-    "static/media/slick.woff": "/mfa-media-site/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/mfa-media-site/index.html",
-    "main.78139ec2.css.map": "/mfa-media-site/static/css/main.78139ec2.css.map",
-    "main.1bf874b6.js.map": "/mfa-media-site/static/js/main.1bf874b6.js.map"
+    "main.css": "/TDLTV/static/css/main.67a692ec.css",
+    "main.js": "/TDLTV/static/js/main.2111a9fc.js",
+    "static/media/background.jpg": "/TDLTV/static/media/background.3324e1703ee18778d7c5.jpg",
+    "static/media/nikon2.jpg": "/TDLTV/static/media/nikon2.9499d036d3cb0a52d4e1.jpg",
+    "static/media/nikon.jpg": "/TDLTV/static/media/nikon.1859a815dc6793eb1e27.jpg",
+    "static/media/error-page.jpeg": "/TDLTV/static/media/error-page.b1993575246593e93d31.jpeg",
+    "static/media/media-site-logo.png": "/TDLTV/static/media/media-site-logo.76d794cba363efbb41ae.png",
+    "static/media/slick.svg": "/TDLTV/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/TDLTV/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/TDLTV/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/TDLTV/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/TDLTV/index.html",
+    "main.67a692ec.css.map": "/TDLTV/static/css/main.67a692ec.css.map",
+    "main.2111a9fc.js.map": "/TDLTV/static/js/main.2111a9fc.js.map"
   },
   "entrypoints": [
-    "static/css/main.78139ec2.css",
-    "static/js/main.1bf874b6.js"
+    "static/css/main.67a692ec.css",
+    "static/js/main.2111a9fc.js"
   ]
 }
