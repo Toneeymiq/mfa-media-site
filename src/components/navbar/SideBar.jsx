@@ -91,7 +91,7 @@ function SideBar(props) {
             </Link>
           </div>
           <div className={SidebarCss.admin}>
-            <Link to="/mfa-media-site/admin">
+            <Link to="/tdl-tv/admin">
               <p>Admin Page</p>
             </Link>
           </div>

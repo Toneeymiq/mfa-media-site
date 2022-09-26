@@ -22,8 +22,6 @@ import AddSportsPhoto from "./databaseAdmin/addPhoto/AddSportsPhoto";
 import AddEducationPhoto from "./databaseAdmin/addPhoto/AddEducationPhoto";
 import AddNaturePhoto from "./databaseAdmin/addPhoto/AddNaturePhoto";
 
-
-
 //Add Videos
 import AddArtsVideo from "./databaseAdmin/addVideo/AddArtsVideo";
 import AddFilm from "./databaseAdmin/addVideo/AddFilm";
@@ -72,47 +70,99 @@ import { VideoSportsPage } from "./components/content/categories/video-page/Spor
 // import AddUser from "./databaseAdmin/addUser/AddUser";
 // import { UserProfile } from "./components/content/categories/photos-page/userProfile";
 
-
-
-
 function App() {
-
   return (
     <>
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
         {/* Admin */}
-        <Route path="/mfa-media-site/admin" element={<Admin />} />
-        
+        <Route path="/tdl-tv/admin" element={<Admin />} />
 
         {/* Admin Pages */}
         {/*Adding Videos */}
-        <Route path="/mfa-media-site/admin/video/music" element={<AddMusicVideo />} />
-        <Route path="/mfa-media-site/admin/video/arts" element={<AddArtsVideo />} />
-        <Route path="/mfa-media-site/admin/video/film" element={<AddFilm />} />
-        <Route path="/mfa-media-site/admin/video/adverts" element={<AddAdvertVideo />} />
-        <Route path="/mfa-media-site/admin/video/educational" element={<AddEducationVideo />} />
-        <Route path="/mfa-media-site/admin/video/mini-documentaries" element={<AddDocumentariesVideo />} />
-        <Route path="/mfa-media-site/admin/video/news&events" element={<AddNewsVideo />} />
-        <Route path="/mfa-media-site/admin/video/clubs&societies" element={<AddClubsVideo />} />
+        <Route
+          path="/tdl-tv/admin/video/music"
+          element={<AddMusicVideo />}
+        />
+        <Route
+          path="/tdl-tv/admin/video/arts"
+          element={<AddArtsVideo />}
+        />
+        <Route path="/tdl-tv/admin/video/film" element={<AddFilm />} />
+        <Route
+          path="/tdl-tv/admin/video/adverts"
+          element={<AddAdvertVideo />}
+        />
+        <Route
+          path="/tdl-tv/admin/video/educational"
+          element={<AddEducationVideo />}
+        />
+        <Route
+          path="/tdl-tv/admin/video/mini-documentaries"
+          element={<AddDocumentariesVideo />}
+        />
+        <Route
+          path="/tdl-tv/admin/video/news&events"
+          element={<AddNewsVideo />}
+        />
+        <Route
+          path="/tdl-tv/admin/video/clubs&societies"
+          element={<AddClubsVideo />}
+        />
 
         {/*Adding Photos */}
-        <Route path="/mfa-media-site/admin/photos/arts" element={<AddArtsPhoto />} />
-        <Route path="/mfa-media-site/admin/photos/news" element={<AddNewsPhoto />} />
-        <Route path="/mfa-media-site/admin/photos/sports" element={<AddSportsPhoto />} />
-        <Route path="/mfa-media-site/admin/photos/education" element={<AddEducationPhoto />} />
-        <Route path="/mfa-media-site/admin/photos/clubs&societies" element={<AddClubsPhoto />} />
-        <Route path="/mfa-media-site/admin/photos/nature" element={<AddNaturePhoto />} />
+        <Route
+          path="/tdl-tv/admin/photos/arts"
+          element={<AddArtsPhoto />}
+        />
+        <Route
+          path="/tdl-tv/admin/photos/news"
+          element={<AddNewsPhoto />}
+        />
+        <Route
+          path="/tdl-tv/admin/photos/sports"
+          element={<AddSportsPhoto />}
+        />
+        <Route
+          path="/tdl-tv/admin/photos/education"
+          element={<AddEducationPhoto />}
+        />
+        <Route
+          path="/tdl-tv/admin/photos/clubs&societies"
+          element={<AddClubsPhoto />}
+        />
+        <Route
+          path="/tdl-tv/admin/photos/nature"
+          element={<AddNaturePhoto />}
+        />
 
         {/* Adding Blog */}
-        <Route path="/mfa-media-site/admin/blog/arts" element={<AddArtsBlog />} />
-        <Route path="/mfa-media-site/admin/blog/news" element={<AddNewsBlog />} />
-        <Route path="/mfa-media-site/admin/blog/clubs&societies" element={<AddClubsBlog />} />
-        <Route path="/mfa-media-site/admin/blog/sports" element={<AddSportsBlog/>} />
-        <Route path="/mfa-media-site/admin/blog/educational" element={<AddEducationalBlog />} />
-        <Route path="/mfa-media-site/admin/blog/innovation" element={<AddInnovationBlog />} />
-        {/* <Route path="/mfa-media-site/admin/user" element={<UserProfile />} /> */}
+        <Route
+          path="/tdl-tv/admin/blog/arts"
+          element={<AddArtsBlog />}
+        />
+        <Route
+          path="/tdl-tv/admin/blog/news"
+          element={<AddNewsBlog />}
+        />
+        <Route
+          path="/tdl-tv/admin/blog/clubs&societies"
+          element={<AddClubsBlog />}
+        />
+        <Route
+          path="/tdl-tv/admin/blog/sports"
+          element={<AddSportsBlog />}
+        />
+        <Route
+          path="/tdl-tv/admin/blog/educational"
+          element={<AddEducationalBlog />}
+        />
+        <Route
+          path="/tdl-tv/admin/blog/innovation"
+          element={<AddInnovationBlog />}
+        />
+        {/* <Route path="/tdl-tv/admin/user" element={<UserProfile />} /> */}
 
         {/* Pages */}
         <Route path="/video" element={<Video />} />
@@ -126,11 +176,14 @@ function App() {
         <Route path="/video/film" element={<FilmPage />} />
         <Route path="/video/adverts" element={<VideoAdvertPage />} />
         <Route path="/video/educational" element={<VideoEducationalPage />} />
-        <Route path="/video/mini-documentaries" element={<DocumentariesPage />} />
+        <Route
+          path="/video/mini-documentaries"
+          element={<DocumentariesPage />}
+        />
         <Route path="/video/news&events" element={<VideoNewsPage />} />
         <Route path="/video/clubs&societies" element={<VideoClubsPage />} />
         <Route path="/video/sports" element={<VideoSportsPage />} />
-        
+
         {/* Photo Pages */}
         <Route path="/photos/arts" element={<PhotoArtPage />} />
         <Route path="/photos/news" element={<PhotoNewsPage />} />
@@ -146,9 +199,8 @@ function App() {
         <Route path="/blog/news" element={<BlogNewsPage />} />
         <Route path="/blog/clubs&societies" element={<BlogClubsPage />} />
         <Route path="/blog/sports" element={<BlogSportsPage />} />
-        <Route path="/blog/innovation" element={<BlogInnovationPage/>} />
-        <Route path="/blog/educational" element={<BlogEducationPage/>} />
-
+        <Route path="/blog/innovation" element={<BlogInnovationPage />} />
+        <Route path="/blog/educational" element={<BlogEducationPage />} />
       </Routes>
 
       <Routes></Routes>
