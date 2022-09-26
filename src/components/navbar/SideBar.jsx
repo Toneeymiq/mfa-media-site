@@ -92,7 +92,7 @@ function SideBar(props) {
           </div>
           <div className={SidebarCss.admin}>
             <Link to="/tdl-tv/admin">
-              <p>Admin Page</p>
+              <p>Add new content</p>
             </Link>
           </div>
         </ul>
