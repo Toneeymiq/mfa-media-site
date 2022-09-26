@@ -78,7 +78,7 @@ function NewContent(props) {
             ></textarea>
           </div>
           <div className={classes.actions}>
-            <Link to="/mfa-media-site/admin">
+            <Link to="/tdl-tv/admin">
               <div className={classes.back_btn}>
                 {" "}
                 <MdArrowBack /> Back
