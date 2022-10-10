@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import AdminCss from "../components/assets/css/adminCss/adminCss.module.css";
 import { MdArrowDropDown } from "react-icons/md";
 import { BsPlusCircle } from "react-icons/bs";
+import { Result } from "postcss";
 
 function AdminLinks(props) {
   const [ToggleAdd, setToggleAdd] = useState(false);
@@ -37,6 +38,20 @@ function AdminLinks(props) {
       });
   }, []);
 
+
+
+  function deleteUser(name) {
+    fetch(  `https://mfa-media-site-database-default-rtdb.firebaseio.com/` +
+    props.categoryName , {
+      // method: 'DELETE'
+    }).then((result) => {
+      
+      result.json().then((resp, id) => {
+        console.log(resp, id)
+      })
+    })
+  }
+
   return (
     <>
       <div className="category_title">
@@ -59,6 +74,7 @@ function AdminLinks(props) {
                       <h5>
                         {value.title} {value.Description}<hr />
                       </h5>
+                      <button onClick={() => deleteUser() }>Delete</button>
                     </div>
                   </>
                 );

@@ -1,6 +1,7 @@
 .content {
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
+  /* flex-wrap: wrap; */
+  column-count: 4;
   padding: .3rem;
   background: #b6b6b624;
   margin: 0 1rem;
@@ -26,7 +27,7 @@
 }
 
 .content_description {
-  display: block;
+  display: none;
   padding: 0 0.5rem;
 }
 
@@ -161,6 +162,9 @@
   .content_description {
     font-size: 16px;
   }
+  .content {
+    column-count: 1;
+  }
 }
 
 @media screen and (max-width: 319px) {
@@ -180,18 +184,23 @@
 
 @media screen and (min-width: 425px) {
   .clicked_video {
-    width: 90%;
+    /* width: 90%; */
     padding: 0 5%;
   }
 
   .content_box {
-    width: 47%;
+    /* width: 47%; */
     margin: 0rem 0;
   }
 
+  .content {
+    column-count: 2;
+  }
+  
 }
 
 @media screen and (max-width: 425px) {
+
   .content_description h1 {
     font-size: 13px;
   }
@@ -215,7 +224,11 @@
     margin-top: -50px;
   }
   .content_box {
-    width: 31.5%;
+    /* width: 31.5%; */
+  }
+
+  .content {
+    column-count: 3;
   }
 }
 
@@ -226,15 +239,17 @@
   }
 
   .content_box {
-    width: 31.9%;
+    /* width: 31.9%; */
   }
-
+  .content {
+    column-count: 4;
+  }
 
 }
 
 @media screen and (min-width: 1024px) {
   .content_box {
-    width: 23.9%;
+    /* width: 23.9%; */
     margin: 0.3rem 0;
   }
 
@@ -249,13 +264,13 @@
     margin: 0.1rem 0;
   }
   .content_box {
-    width: 24.2%;
+    /* width: 24.2%; */
   }
 }
 
 @media screen and (min-width: 2560px) {
   .content_box {
-    width: 19.5%;
+    /* width: 19.5%; */
     margin: 0.1rem 0;
   }
 

@@ -15,7 +15,7 @@ function PhotoContent(props) {
   return (
     <>
       <div className={VideoCss.category_title}>{props.category}</div>
-      <div className={`${HomeCss.content} ${VideoCss.film_container}`}>
+      {/* <div className={`${HomeCss.content} ${VideoCss.film_container}`}> */}
         {props.PhotosContent.map((value) => (
           <ContentBox
             title={value.title}
@@ -111,7 +111,7 @@ function PhotoContent(props) {
             }
           ></ContentBox>
         ))}
-      </div>
+      {/* </div> */}
     </>
   );
 }

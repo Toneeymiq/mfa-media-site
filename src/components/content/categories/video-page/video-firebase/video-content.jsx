@@ -10,7 +10,7 @@ function VideoContent(props) {
   return (
     <>
       <div className={VideoCss.category_title}>{props.category}</div>
-      <div className={`${HomeCss.content} ${VideoCss.film_container}`}>
+      <div className={`${HomeCss.content} ${VideoCss.film_container}`}>fdg
         {props.VideosContent.map((value) => (
           <ContentBox
             title={value.title}
