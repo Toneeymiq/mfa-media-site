@@ -6,11 +6,7 @@ import React from "react";
 import HomeCss from "../../assets/css/homeCss/home.module.css";
 
 import VideoCss from "../../assets/css/VideoCss/VideoCss.module.css";
-import Photos from "../photos/Photos";
-import VideoContent from "../video/Video";
-import { VideoArtsPage } from "../../content/categories/video-page/Arts/VideoArtsPage";
 import { MusicPage } from "../../content/categories/video-page/Music/Music";
-import { VideoFirebase } from "../../content/categories/video-page/video-firebase/video-firebase";
 import { FilmPage } from "../../content/categories/video-page/Film/Film";
 import { PhotoArtPage } from "../../content/categories/photos-page/Arts/PhotoArtsList";
 import { PhotoClubsPage } from "../../content/categories/photos-page/Clubs-and-societies/PhotosClubsList";
