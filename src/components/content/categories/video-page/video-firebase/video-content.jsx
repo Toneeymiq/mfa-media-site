@@ -10,7 +10,7 @@ function VideoContent(props) {
   return (
     <>
       <div className={VideoCss.category_title}>{props.category}</div>
-      <div className={`${HomeCss.content} ${VideoCss.film_container}`}>fdg
+      {/* <div className={`${HomeCss.content} ${VideoCss.film_container}`}> */}
         {props.VideosContent.map((value) => (
           <ContentBox
             title={value.title}
@@ -40,7 +40,7 @@ function VideoContent(props) {
             }
           ></ContentBox>
         ))}
-      </div>
+      {/* </div> */}
     </>
   );
 }

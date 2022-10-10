@@ -8,7 +8,7 @@ function VideoContent() {
 
   return (
     <div>
-      <VideoArtsPage />
+      {/* <VideoArtsPage /> */}
       <FilmPage />
       <MusicPage />
     </div>

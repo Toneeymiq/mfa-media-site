@@ -27,7 +27,7 @@
 }
 
 .content_description {
-  display: none;
+  display: block;
   padding: 0 0.5rem;
 }
 
