@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/tdl-tv/static/css/main.4b8ee65f.css",
+    "main.css": "/tdl-tv/static/css/main.4da47532.css",
     "main.js": "/tdl-tv/static/js/main.c1d581ad.js",
     "static/media/background.jpg": "/tdl-tv/static/media/background.3324e1703ee18778d7c5.jpg",
     "static/media/nikon2.jpg": "/tdl-tv/static/media/nikon2.9499d036d3cb0a52d4e1.jpg",
@@ -13,11 +13,11 @@
     "static/media/slick.woff": "/tdl-tv/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/tdl-tv/index.html",
     "static/media/index.cjs": "/tdl-tv/static/media/index.cd351d7c31d0d3fccf96.cjs",
-    "main.4b8ee65f.css.map": "/tdl-tv/static/css/main.4b8ee65f.css.map",
+    "main.4da47532.css.map": "/tdl-tv/static/css/main.4da47532.css.map",
     "main.c1d581ad.js.map": "/tdl-tv/static/js/main.c1d581ad.js.map"
   },
   "entrypoints": [
-    "static/css/main.4b8ee65f.css",
+    "static/css/main.4da47532.css",
     "static/js/main.c1d581ad.js"
   ]
 }
