@@ -34,11 +34,11 @@ function NavBar() {
           ) : (
             <>
               <div>
-                <RiMenu2Line
+                {/* <RiMenu2Line
                   className={`${NavbarCss.nav_bar_menubtn} ${NavbarCss.open_menubtn}`}
                   color="var(--text-color)"
                   onClick={() => setToggleMenu(true)}
-                />
+                /> */}
               </div>
             </>
           )}
